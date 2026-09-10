@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="Portal CREDIGOB: cotizadores, clientes, capacidad, cartera, convenios y seguimiento comercial."><title>CREDIGOB · Portal comercial</title><style>:root{--wine:#642a2c;--wine-deep:#321e25;--wine-soft:#f5e9ea;--blue:#2c60d8;--navy:#182d50;--ink:#202d41;--muted:#617087;--line:#dfe5ed;--bg:#f3f5f8;--green:#167654;--green-bg:#e7f5ed;--amber:#92601c;--amber-bg:#fff3dd;--red:#b43a3c;--shadow:0 8px 28px #23324b08}
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta name="description" content="Portal CREDIGOB: cotizadores, clientes, capacidad, cartera, convenios y seguimiento comercial."><title>CREDIGOB · Portal comercial</title><style>:root{--wine:#642a2c;--wine-deep:#321e25;--wine-soft:#f5e9ea;--blue:#2c60d8;--navy:#182d50;--ink:#202d41;--muted:#617087;--line:#dfe5ed;--bg:#f3f5f8;--green:#167654;--green-bg:#e7f5ed;--amber:#92601c;--amber-bg:#fff3dd;--red:#b43a3c;--shadow:0 8px 28px #23324b08}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.55}input,select,textarea{width:100%;border:1px solid #cdd7e4;background:#fff;color:var(--ink);border-radius:9px;padding:10px 12px;min-height:44px}textarea{resize:vertical;min-height:80px}input[type=checkbox]{width:18px;min-height:18px;accent-color:var(--wine)}input[readonly]{background:#f1f4f8;color:var(--muted)}:focus-visible{outline:3px solid #6b95ed;outline-offset:3px}input:focus,select:focus,textarea:focus{outline:2px solid #7c9dd9;outline-offset:1px}h1,h2,h3,p{margin-top:0}h1{font-size:30px;line-height:1.2;letter-spacing:-.8px;margin-bottom:7px}h2{font-size:20px;letter-spacing:-.3px;margin-bottom:12px}h3{font-size:17px;margin-bottom:10px}small,.small{font-size:13px}.muted{color:var(--muted)}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:14px}.money{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700}.positive{color:var(--green)}.negative{color:var(--red)}[hidden]{display:none!important}.icon{width:20px;height:20px;flex-shrink:0;vertical-align:middle}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14px;font-weight:650;min-height:42px;padding:9px 14px;border-radius:9px;text-decoration:none}.btn:hover{background:#f5f7fa;border-color:#acbbd0}.btn.primary{background:var(--wine);border-color:var(--wine);color:#fff}.btn.primary:hover{background:#512124}.btn.blue{background:var(--blue);border-color:var(--blue);color:white}.btn.soft{background:var(--wine-soft);border-color:transparent;color:var(--wine)}.btn.danger{background:#fceced;color:var(--red);border-color:#f0d0d1}.btn.slim{font-size:14px;padding:6px 10px;min-height:34px}.btn.ghost{background:transparent;border-color:transparent}.btn.wide{width:100%}.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.between{justify-content:space-between}.end{justify-content:flex-end}.stack{display:grid;gap:18px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field>label,.field>span:first-child{font-size:14px;font-weight:650;color:#53627a}.field small{color:var(--muted)}.full{grid-column:1/-1}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.form-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.check{display:flex;align-items:center;gap:9px;font-size:14px;cursor:pointer}.actions{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.empty{padding:48px 24px;text-align:center;color:var(--muted)}.empty .empty-icon{display:grid;place-items:center;background:#eef2f8;color:#7c8aa1;width:60px;height:60px;margin:0 auto 16px;border-radius:18px}.empty h3{color:var(--ink);margin-bottom:7px}.empty p{max-width:450px;margin:0 auto 18px;font-size:14px}.pill{display:inline-flex;align-items:center;gap:5px;background:#edf1f8;color:#526985;border-radius:6px;padding:4px 8px;font-size:13px;font-weight:650;white-space:nowrap}.pill.green{background:var(--green-bg);color:var(--green)}.pill.amber{background:var(--amber-bg);color:var(--amber)}.pill.red{background:#fceced;color:var(--red)}.pill.wine{background:var(--wine-soft);color:var(--wine)}.note{font-size:14px;padding:12px 15px;border-radius:9px;background:#edf3ff;color:#37557d;border:1px solid #dce6f7}.note.amber{background:var(--amber-bg);border-color:#f0deb5;color:#775218}.note.red{background:#fceced;border-color:#f2c4c7;color:var(--red)}.note p:last-child{margin-bottom:0}.separator{height:1px;background:var(--line);margin:24px 0}.section-label{font-size:12px;letter-spacing:1.7px;text-transform:uppercase;font-weight:750}
 .login{min-height:100vh;display:grid;place-items:center;padding:32px;background:radial-gradient(ellipse at 20% 20%,#dbc7c9 0,transparent 52%),#eef1f6}.login-card{width:min(1020px,100%);min-height:560px;display:grid;grid-template-columns:1.1fr 1fr;background:white;border-radius:24px;box-shadow:0 30px 80px #33263620;overflow:hidden}.login-brand{padding:48px;background:linear-gradient(150deg,#763739,#321e25);color:white;display:flex;flex-direction:column;justify-content:space-between}.logo-box{background:#fff;padding:16px 25px;border-radius:15px;width:214px}.logo-box img{display:block;width:100%;max-height:116px;object-fit:contain}.login-brand h1{font-size:43px;line-height:1.13;letter-spacing:-1.4px;margin:30px 0 16px}.login-brand p{color:#e3ccd0}.login-form{padding:50px 44px;display:flex;flex-direction:column;justify-content:center}.login-form h2{font-size:27px}.login-form .field{margin-bottom:16px}.login-form .btn{margin-top:5px}.login-footer{margin-top:18px;font-size:13px;color:var(--muted)}
 .app{display:grid;grid-template-columns:248px minmax(0,1fr);min-height:100vh}.sidebar{background:linear-gradient(170deg,#652b2e,#321f27 85%);color:#fff;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;padding:28px 16px 18px;gap:24px;overflow-y:auto}.side-brand{display:flex;justify-content:center;padding:0 15px}.side-brand .logo-box{width:172px;padding:10px 18px;border-radius:11px}.side-brand img{max-height:80px}.nav-label{color:#c6aeb4;font-size:12px;text-transform:uppercase;letter-spacing:1.8px;padding:0 15px;margin-bottom:12px}.nav{display:grid;gap:5px}.nav button{display:flex;align-items:center;gap:13px;background:none;border:0;border-radius:9px;color:#e8dbe0;text-align:left;padding:12px 13px;font-size:14px;font-weight:550;min-height:47px}.nav button:hover{background:#ffffff0c}.nav button.active{background:#fff;color:var(--wine);box-shadow:0 6px 18px #16071120;font-weight:700}.nav .nav-count{margin-left:auto;min-width:22px;text-align:center;background:#ffffff18;border-radius:5px;font-size:12px;padding:1px 4px}.nav button.active .nav-count{background:var(--wine-soft)}.side-footer{margin-top:auto;border-top:1px solid #ffffff25;padding:18px 6px 0}.avatar{display:grid;place-items:center;background:#ffffff18;color:white;width:36px;height:36px;border-radius:10px;font-weight:700}.workspace{min-width:0}.topbar{height:78px;border-bottom:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 32px;gap:12px}.crumb{font-size:14px;color:var(--muted)}.crumb b{color:var(--ink);font-weight:650}.topbar-right{display:flex;gap:10px;align-items:center}.topbar time{font-size:13px;color:var(--muted);margin-right:8px}.bell{position:relative}.notification-dot{position:absolute;top:5px;right:5px;width:8px;height:8px;border-radius:50%;background:#be4648}.main{padding:28px 32px 48px;max-width:1850px;margin:0 auto}.page-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:24px}.page-head p{font-size:14px;color:var(--muted);margin:0}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:20px 0}.kpi{background:#fff;border:1px solid var(--line);border-radius:13px;padding:19px 20px;box-shadow:var(--shadow)}.kpi .label{font-size:14px;color:var(--muted)}.kpi strong{display:block;font-size:28px;letter-spacing:-.7px;margin:7px 0 2px;line-height:1.15;font-variant-numeric:tabular-nums}.kpi small{color:var(--muted)}.panel{background:white;border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow);overflow:hidden}.panel-head{padding:19px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px}.panel-head h2,.panel-head h3{margin:0}.panel-body{padding:22px}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}.search-wrap{position:relative;flex:1;min-width:230px;max-width:490px}.search-wrap .icon{position:absolute;left:13px;top:13px;color:#7c8aa0}.search-wrap input{padding-left:42px}.tabs{display:inline-flex;background:#e9edf3;border:1px solid #dfe5ee;border-radius:10px;padding:4px;gap:4px;flex-wrap:wrap}.tabs button{border:0;background:none;border-radius:7px;color:#5f6d82;padding:9px 15px;font-size:14px;font-weight:650}.tabs button.active{background:white;color:var(--wine);box-shadow:0 1px 5px #26375218}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;background:#f8fafc;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#64738b;font-weight:700;padding:13px 17px;white-space:nowrap}td{padding:15px 17px;border-top:1px solid #e9edf3;vertical-align:middle}tbody tr:hover{background:#fbfcfe}td small{display:block;color:var(--muted);margin-top:4px}td .btn{white-space:nowrap}.reviewed-row{opacity:.7}.table-name{font-weight:650;min-width:185px}.bank-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.bank-head{background:#fff;color:var(--ink);padding:19px 22px;gap:12px}.bank-title{display:flex;align-items:center;gap:10px;min-width:0}.bank-title strong{font-size:14px;font-weight:650;line-height:1.4;overflow-wrap:anywhere}.bank-icon{width:36px;height:36px;display:grid;place-items:center;flex-shrink:0;background:var(--wine-soft);color:var(--wine);border-radius:10px}.bank-card table th,.bank-card table td{padding:13px 17px}.bank-discount{color:var(--wine)}.bank-footer{padding:14px 22px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);background:#fafbfd}.bank-footer p{margin:0 0 6px}.quote-layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:start}.quote-controls{position:sticky;top:22px}.quote-controls .field{margin-bottom:16px}.quote-controls .form-grid .field{margin:0}.quote-controls .tabs{width:100%;margin-bottom:20px}.quote-controls .tabs button{flex:1;padding:8px}.quote-note{background:var(--wine-soft);color:var(--wine);border-color:#e8d6d8}.quote-profile-field>.field{margin-bottom:8px}.quote-optional{margin-bottom:8px}.quote-optional summary{font-size:13px;color:var(--wine);cursor:pointer;font-weight:600}.quote-optional .field{margin-top:12px;margin-bottom:6px}.quote-optional small{color:var(--muted)}.quote-controls input:focus,.quote-controls select:focus{outline-color:var(--wine)}.quote-summary{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:17px}.quote-summary h2{margin:0}.client-card .panel-head{padding:18px 22px}.client-card h3{margin:0 0 2px}.client-card .capacity{font-size:24px;line-height:1.25}.meta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}.meta-grid dt{font-size:12px;color:var(--muted);margin-bottom:3px}.meta-grid dd{margin:0;font-size:14px;overflow-wrap:anywhere}.client-card dl{margin:0}.card-actions{padding:14px 22px;background:#fafbfd;border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}.loan-box{border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:11px;padding:18px;background:#fafbfd;margin:15px 0}.loan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.loan-box .row{margin-bottom:12px}.loan-status{font-size:13px;margin-top:12px}.loan-group{display:flex;align-items:center;justify-content:space-between;padding:12px 15px;background:#f1f5fc;border:1px solid #dce5f2;border-radius:9px;margin-top:10px;gap:12px}.charts{display:grid;grid-template-columns:1fr 1.7fr;gap:20px}.donut-wrap{display:flex;justify-content:center;position:relative;margin:18px auto;width:210px;height:210px}.donut{width:210px;height:210px;border-radius:50%;display:grid;place-items:center;background:#e7ebf1}.donut-hole{width:150px;height:150px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column}.donut-hole strong{font-size:21px}.chart-legend{display:grid;gap:12px;font-size:14px}.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px}.chart-svg{width:100%;height:auto;min-height:210px;display:block}.chart-svg text{font-family:inherit;font-size:13px;fill:#617087}.progress{height:7px;border-radius:8px;background:#e7ebf1;overflow:hidden;margin:12px 0}.progress>span{display:block;height:100%;background:var(--wine);border-radius:8px}.task{display:flex;gap:15px;padding:18px 22px;border-top:1px solid var(--line);align-items:flex-start}.task:first-child{border-top:0}.task-title{flex:1;min-width:0}.task-title h3{margin:0 0 5px;font-size:16px}.task-title p{margin:0;font-size:14px;color:var(--muted)}.task.done h3{text-decoration:line-through;color:var(--muted)}.task .check{margin-top:5px}.footer-note{font-size:13px;color:var(--muted);margin-top:20px}.demo-bar{padding:10px 20px;background:#fff1d8;color:#7e591f;font-size:14px;text-align:center;border-bottom:1px solid #efdbb2}.mobile-menu{display:none}
@@ -18,7 +18,7 @@ dialog{width:min(900px,calc(100vw - 32px));max-height:90vh;overflow:auto;border:
 .portfolio-row{width:100%;border:0;border-top:1px solid var(--line);border-radius:0;background:#fff;color:var(--ink);text-align:left;min-height:76px;font:inherit}
 .portfolio-row:hover{background:#fbf6f6}.portfolio-row:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;background:#f5f8ff}
 .portfolio-name{font-size:16px;font-weight:650;line-height:1.45;overflow-wrap:anywhere;min-width:0}
-.portfolio-dependency{min-width:0}.portfolio-dependency .pill{font-size:13px}
+.portfolio-dependency{min-width:0;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.portfolio-dependency .pill{font-size:13px}
 .portfolio-capacity{display:flex;align-items:center;justify-content:flex-end;gap:12px;font-size:19px;min-width:0}
 .portfolio-capacity>.icon{width:16px;height:16px;color:var(--muted)}
 .portfolio-followup{margin-bottom:24px;padding:16px;border:1px solid var(--line);border-radius:10px;background:#fafbfd}
@@ -88,21 +88,112 @@ body.theme-dark .switch span:after{background:#e9edf2}
 @media(max-width:720px){.finance-row-actions{width:100%;margin-left:0;margin-top:6px}}
 
 body.theme-dark .login-card,body.theme-dark .login-form,body.theme-dark .donut-hole,body.theme-dark .rule-editor-dialog,body.theme-dark .rule-editor-frame{background:#2a2f36!important;color:var(--ink);border-color:var(--line)}
+
+/* ===== CREDIGOB · indicador de procesamiento ===== */
+.data-loading{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:grid;
+  place-items:center;
+  padding:24px;
+  background:rgba(32,45,65,.34);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+.data-loading[hidden]{display:none!important}
+.data-loading-card{
+  width:min(390px,calc(100vw - 36px));
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  box-shadow:0 24px 70px #18203345;
+  padding:24px 26px;
+  text-align:center;
+}
+.data-loading-logo{
+  font-size:12px;
+  letter-spacing:1.7px;
+  text-transform:uppercase;
+  font-weight:800;
+  color:var(--wine);
+  margin-bottom:17px;
+}
+.data-loading-spinner{
+  width:42px;
+  height:42px;
+  margin:0 auto 16px;
+  border:4px solid var(--wine-soft);
+  border-top-color:var(--wine);
+  border-radius:50%;
+  animation:credigob-loading-spin .72s linear infinite;
+}
+.data-loading-card strong{
+  display:block;
+  font-size:17px;
+  margin-bottom:5px;
+}
+.data-loading-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+@keyframes credigob-loading-spin{to{transform:rotate(360deg)}}
+body.theme-dark .data-loading{background:rgba(0,0,0,.48)}
+body.theme-dark .data-loading-card{
+  background:#2a2f36;
+  color:var(--ink);
+  border-color:var(--line);
+}
+body.theme-dark .data-loading-spinner{
+  border-color:#4a3338;
+  border-top-color:#c46a70;
+}
+@media (prefers-reduced-motion:reduce){
+  .data-loading-spinner{animation-duration:1.5s}
+}
+
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
 <script>
+/* Compatibilidad y arranque robusto para móvil. */
+if(!String.prototype.replaceAll){String.prototype.replaceAll=function(search,replacement){return this.split(search).join(replacement);};}
+if(!Array.prototype.flatMap){Array.prototype.flatMap=function(fn,thisArg){return Array.prototype.concat.apply([],this.map(fn,thisArg));};}
+if(!Array.prototype.at){Array.prototype.at=function(index){index=Math.trunc(index)||0;if(index<0)index+=this.length;return this[index];};}
+if(!Object.fromEntries){Object.fromEntries=function(entries){const obj={};for(const pair of entries)obj[pair[0]]=pair[1];return obj;};}
 const firebaseConfig={apiKey:"AIzaSyBVXKnIhZp9rRKf7gnp89cXORDoxTMM5e8",authDomain:"portal-credigob.firebaseapp.com",projectId:"portal-credigob",storageBucket:"portal-credigob.firebasestorage.app",messagingSenderId:"535037126100",appId:"1:535037126100:web:f6fb77d1ff7b8bad582241"};
-firebase.initializeApp(firebaseConfig);
-const fbAuth=firebase.auth();
-const fbDb=firebase.firestore();
-try{fbDb.enablePersistence({synchronizeTabs:true});}catch(e){}
+let fbAuth=null,fbDb=null,firebaseInitError='',authPersistenceReady=Promise.resolve();
+try{
+  if(typeof firebase==='undefined')throw Error('No se pudieron cargar los servicios de Firebase.');
+  if(!firebase.apps.length)firebase.initializeApp(firebaseConfig);
+  fbAuth=firebase.auth();
+  fbDb=firebase.firestore();
+  authPersistenceReady=fbAuth.setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+    .catch(()=>fbAuth.setPersistence(firebase.auth.Auth.Persistence.SESSION))
+    .catch(()=>fbAuth.setPersistence(firebase.auth.Auth.Persistence.NONE));
+  /* IndexedDB/Persistence de Firestore puede fallar en Safari, incógnito y algunos WebView.
+     En móvil no es necesaria para la sincronización en tiempo real, así que no bloqueamos el portal con ella. */
+  const mobileLike=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'');
+  if(!mobileLike&&location.protocol==='https:'){
+    Promise.resolve(fbDb.enablePersistence({synchronizeTabs:true})).catch(()=>{});
+  }
+}catch(e){firebaseInitError=e&&e.message?e.message:String(e);}
 </script>
 </head>
 <body>
 <div id="login-view" class="login"><div class="login-card"><section class="login-brand"><div><div class="logo-box"><span class="logo-art"><img data-logo alt="CREDIGOB · Crédito nómina y domiciliado"></span></div><h1>Bienvenido<br>a tu portal</h1><p>Cotiza, conoce a tus clientes y da seguimiento a cada oportunidad.</p><div class="daily-welcome" aria-labelledby="daily-kind"><span class="section-label" id="daily-kind">Para alegrar el día</span><p id="daily-message" class="daily-message"></p><time id="daily-date"></time></div></div><small>PORTAL COMERCIAL · VERSIÓN 2</small></section><section class="login-form"><span class="section-label muted">BIENVENIDO A CREDIGOB</span><h2 style="margin:12px 0 8px">Iniciar sesión</h2><p class="muted small">Abre tu espacio de trabajo.</p><form id="login-form"><div class="field"><label for="login-user">Correo electrónico</label><input id="login-user" type="email" autocomplete="username" required></div><div class="field"><label for="login-pass">Contraseña</label><input id="login-pass" type="password" autocomplete="current-password" required></div><button class="btn primary wide" type="submit">Entrar al portal <span aria-hidden="true">→</span></button><p id="login-error" role="alert" class="negative small" style="margin-top:10px"></p></form><p class="login-footer">Inicia sesión con la cuenta que te compartió tu equipo.<br>Los datos se guardan en la nube y se sincronizan entre los dispositivos del equipo.</p></section></div></div>
 <div id="app-view" class="app" hidden><aside class="sidebar"><div class="side-brand"><div class="logo-box"><span class="logo-art"><img data-logo alt="CREDIGOB"></span></div></div><div><div class="nav-label">Espacio de trabajo</div><nav id="navigation" class="nav" aria-label="Áreas del portal"></nav></div><div class="side-footer"><div class="row"><div class="avatar">A</div><div><b style="font-size:14px">Asesor</b><div style="font-size:12px;color:#ccb6be" id="session-label">Portal local</div></div><button class="btn ghost" style="color:#dfcdd2;margin-left:auto;padding:8px" data-action="logout" aria-label="Cerrar sesión">↗</button></div></div></aside><div class="workspace"><div id="demo-bar" class="demo-bar" hidden>Estás en una base de ejemplo. <button class="btn slim ghost" data-action="exit-demo">Volver a mis datos</button></div><header class="topbar"><div class="row"><button class="btn ghost mobile-menu" data-action="menu" aria-label="Abrir menú">☰</button><div class="crumb"><span>CREDIGOB &nbsp;/&nbsp; </span><b id="breadcrumb">Cotizadores</b></div></div><div class="topbar-right"><time id="today-label"></time><button class="btn bell" data-action="nav" data-id="tasks" aria-label="Ver pendientes" id="bell"></button><button class="btn" data-action="settings" id="settings-button" aria-label="Configuración"></button><button class="btn" data-action="backup" id="data-button"></button></div></header><main id="main" class="main" tabindex="-1"></main></div></div>
+
+<div id="data-loading" class="data-loading" hidden role="status" aria-live="polite" aria-busy="true">
+  <div class="data-loading-card">
+    <div class="data-loading-logo">CREDIGOB · Portal comercial</div>
+    <div class="data-loading-spinner" aria-hidden="true"></div>
+    <strong id="data-loading-title">Procesando información…</strong>
+    <p id="data-loading-message">Preparando los datos del portal.</p>
+  </div>
+</div>
 <dialog id="dialog" aria-labelledby="dialog-title"></dialog><dialog id="finance-dialog" aria-labelledby="finance-dialog-title"></dialog><dialog id="rule-editor-dialog" class="rule-editor-dialog" aria-labelledby="rule-editor-title"><div class="rule-editor-shell"><header class="rule-editor-head"><div><h2 id="rule-editor-title">Definir reglas de cotizadores</h2><p>Los cambios, importaciones y exportaciones se administran desde este módulo.</p></div><button class="btn" type="button" data-action="close-rule-editor">Cerrar</button></header><iframe id="rule-editor-frame" class="rule-editor-frame" title="Editor de reglas de cotizadores"></iframe></div></dialog><div id="toasts" class="toast-stack" aria-live="polite"></div><input id="import-file" type="file" accept="application/json,.json" hidden><input id="import-clients-file" type="file" accept=".csv,.json,text/csv,application/json" hidden><noscript>Activa JavaScript en tu navegador para usar el portal CREDIGOB.</noscript>
 <script>const TABLES={"GOB MICH":[
     { name: "CRÉDITO MAESTRO", min: 2000, max: 280000, notes: "", operations: ["new","cc"], factores: { 36: 0.0445980, 48: 0.0376530, 72: 0.0307090, 96: 0.0260770, 120: 0.0228330 } },
@@ -395,20 +486,20 @@ const CG = (() => {
     return [Math.floor(n/12),n%12,days];
   }
   function maestroEligibility(profile,at=dateStr()) {
-    const p=quoteProfile(profile,at),snte=profile.dependency==='SNTE 18';
-    const result={lender:'CM',basis:'maestro',status:'pending',maxTerm:null,allowedTerms:[],pendingTerms:[],asOf:at,source:snte?'Crédito Maestro · Michoacán / Educación · imagen proporcionada':'Crédito Maestro · Gobierno / Michoacán · imagen proporcionada',reason:''};
+    const p=quoteProfile(profile,at),magisterioGob=profile.dependency==='GOB MICH'&&profile.profession==='Magisterio',snte=profile.dependency==='SNTE 18'||magisterioGob;
+    const result={lender:'CM',basis:'maestro',status:'pending',maxTerm:null,allowedTerms:[],pendingTerms:[],asOf:at,source:magisterioGob?'Crédito Maestro · GOB MICH / Magisterio · misma tabla de SNTE 18':snte?'Crédito Maestro · Michoacán / Educación · imagen proporcionada':'Crédito Maestro · Gobierno / Michoacán · imagen proporcionada',reason:''};
     const pending=reason=>({...result,reason:'Crédito Maestro: pendiente de validar. '+reason});
     const reject=reason=>({...result,status:'not_applicable',reason:'Crédito Maestro: no cumple las condiciones. '+reason});
     if(!parseDate(at)||!p.valid)return pending('Captura una edad válida desde 18 años y una antigüedad válida; revisa las fechas.');
     if(!snte){
-      if(profile.dependency!=='GOB MICH'||!['Policía','Custodio','Burocracia'].includes(profile.profession))return pending('No se han proporcionado condiciones para esta dependencia o profesión; no se aplican las de SNTE 18.');
+      if(profile.dependency!=='GOB MICH'||!['Policía','Custodio','Burocracia'].includes(profile.profession))return pending('No se han proporcionado condiciones para esta dependencia o profesión.');
       if(p.age>=63)return reject('La edad permitida es de 18 a 62 años y 11 meses.');
       if(p.seniorityYears<2)return reject('Requiere al menos 2 años de antigüedad laboral.');
       if(p.seniorityYears>=25)return reject('Con 25 años o más de antigüedad no es sujeto a crédito, según la regla confirmada para este portal.');
       const maxTerm=profile.profession==='Burocracia'?120:48;
       return {...result,status:'limited',maxTerm,allowedTerms:maestroTerms.filter(t=>t<=maxTerm&&t!==108),reason:`Crédito Maestro · GOB MICH · ${profile.profession}: máximo ${maxTerm} quincenas; edad de 18 a 62 años y 11 meses; antigüedad desde 2 y menor de 25 años. Monto de $2,000 a $60,000. Mismas restricciones para crédito nuevo y compra de cartera. Sujeto a validación, no constituye aprobación.`};
     }
-    if(profile.profession!=='Maestro SEP')return pending('La tabla de SNTE 18 corresponde a Maestro SEP / federales.');
+    if(!magisterioGob&&profile.profession!=='Maestro SEP')return pending('La tabla de SNTE 18 corresponde a Maestro SEP / federales.');
     const gender=norm(profile.gender);if(!['FEMENINO','MASCULINO'].includes(gender))return pending('La tabla distingue Mujer y Hombre; falta una categoría contemplada por el documento.');
     // User confirmed the completed-year split: women 23+, men 25+.
     const group=gender==='FEMENINO'&&p.seniorityYears>=23?'women':gender==='MASCULINO'&&p.seniorityYears>=25?'men':'general';
@@ -422,7 +513,7 @@ const CG = (() => {
     const maxTerm=allowedTerms.at(-1)||null,status=maxTerm?'limited':pendingTerms.length?'pending':'not_applicable';
     const groupLabel=group==='women'?'Mujer con 23 años o más de antigüedad':group==='men'?'Hombre con 25 años o más de antigüedad':'Grupo general, por debajo del corte de antigüedad';
     const ageLabel=exact?`${exact[0]} años, ${exact[1]} meses y ${exact[2]} ${exact[2]===1?'día':'días'}`:`${p.age} años cumplidos`;
-    const reason=`Crédito Maestro · SNTE 18 / federales · ${groupLabel} · Edad actual: ${ageLabel}. `+(maxTerm?`Máximo confirmado por edad: ${maxTerm} quincenas. `:pendingTerms.length?'Pendiente de validar la edad exacta. ':'Supera el límite de edad de todos los plazos documentados. ')+(pendingTerms.length?`Para resolver ${pendingTerms.join(', ')} quincenas, usa Fecha de nacimiento: el límite incluye meses y días y no se supone una fecha. `:'')+'Antigüedad = años cotizados. Mismas condiciones para crédito nuevo y compra de cartera; no constituye aprobación.';
+    const reason=`Crédito Maestro · ${magisterioGob?'GOB MICH / Magisterio (misma tabla de SNTE 18 / federales)':'SNTE 18 / federales'} · ${groupLabel} · Edad actual: ${ageLabel}. `+(maxTerm?`Máximo confirmado por edad: ${maxTerm} quincenas. `:pendingTerms.length?'Pendiente de validar la edad exacta. ':'Supera el límite de edad de todos los plazos documentados. ')+(pendingTerms.length?`Para resolver ${pendingTerms.join(', ')} quincenas, usa Fecha de nacimiento: el límite incluye meses y días y no se supone una fecha. `:'')+'Antigüedad = años cotizados. Mismas condiciones para crédito nuevo y compra de cartera; no constituye aprobación.';
     return {...result,status,maxTerm,allowedTerms,pendingTerms,group,ageExact:exact,reason};
   }
   function maestroTermRule(risk,term) {
@@ -474,12 +565,17 @@ const CG = (() => {
     const consupagoRisk=detailed&&dependency==='SNTE 18'?consupagoEligibility({...input,dependency},at):null;
     if(!validValue&&consupagoRisk?.status!=='manual')return [];
     const products=[...(tables[dependency]||[])];
+    if(detailed&&dependency==='GOB MICH'&&profession==='Magisterio'){
+      const cmIndex=products.findIndex(f=>family(f.name)==='CM'&&productApplies(f,operation));
+      const snteCM=(tables['SNTE 18']||[]).find(f=>family(f.name)==='CM'&&productApplies(f,operation));
+      if(cmIndex>=0&&snteCM){const gobCM=products[cmIndex];products[cmIndex]={...snteCM,name:gobCM.name,label:gobCM.label||snteCM.label,notes:[gobCM.notes,'Magisterio GOB MICH usa la misma tabla de Crédito Maestro que SNTE 18.'].filter(Boolean).join(' ')};}
+    }
     return products.filter(f=>productApplies(f,operation)&&(validValue||isConsupago(f))).map(original=>{
       const cm=family(original.name)==='CM',cs=dependency==='SNTE 18'&&isConsupago(original),f=cs?{...original,notes:[original.notes,'A partir de 60 años: cotización manual a un año (24 quincenas). Tasa pendiente; no se reutiliza el factor de otro plazo.'].filter(Boolean).join(' ')}:original;
       const rows=[];const excluded=[];
       const risk=detailed?(cs?consupagoRisk:cm?maestroEligibility({...input,dependency},at):dependency==='SNTE 18'&&family(f.name)==='F'?fortalezaRetirement({...input,dependency},at):null):null;
       if(cs&&risk?.status==='manual')return {...f,rows,excluded,risk};
-      const effectiveMax=detailed&&cm&&dependency==='GOB MICH'?Math.min(f.max,60000):f.max;
+      const effectiveMax=detailed&&cm&&dependency==='GOB MICH'&&profession!=='Magisterio'?Math.min(f.max,60000):f.max;
       for(const term of [36,48,72,96,120]){
         const factor=f.factores[term];if(!factor||factor<=0)continue;
         const rule=risk?(cs?consupagoTermRule(risk,term):cm?maestroTermRule(risk,term):fortalezaTermRule(risk,term)):detailed?policy(dependency,profession,f,term,seniorityMonths,input,at):{allowed:true,pending:false,reason:''};
@@ -626,6 +722,7 @@ const CG = (() => {
     if(c.phone&&phone(c.phone).length!==10)pending.push('Corregir celular');
     if(!c.contactBrand)pending.push('Marca del contacto (CREDIGOB/CREDISEP)');
     if(c.dependency==='GOB MICH'&&!c.sector)pending.push('Área de GOB MICH');
+    if(c.dependency==='GOB MICH'&&norm(c.profession)==='POLICIA'&&!['Base','Interino'].includes(c.policeStatus||''))pending.push('Tipo de plaza del policía (Base/Interino)');
     if(c.dependency==='SNTE 18'&&(!c.regime||c.regime==='Por confirmar'))pending.push('Régimen pensionario');
     if(!c.verified)pending.push('Verificación del celular');
     if(!Number.isFinite(c.capacity))pending.push('Capacidad');
@@ -652,7 +749,7 @@ const CG = (() => {
   }
   function validateState(s) {
     if(!s||s.version!==2||!Array.isArray(s.clients)||!Array.isArray(s.deals)||!Array.isArray(s.sales)||!Array.isArray(s.tasks)||!Array.isArray(s.lenders)||!s.goals||!Array.isArray(s.history))throw Error('El archivo no es un respaldo de CREDIGOB 2.');
-    const ids=new Set();for(const c of s.clients){if(typeof c.id!=='string'||!c.name||ids.has(c.id)||(!Number.isFinite(c.capacity)&&c.capacity!==null)||!Array.isArray(c.loans)||!['SNTE 18','GOB MICH'].includes(c.dependency))throw Error('Hay clientes inválidos o repetidos.');ids.add(c.id);for(const l of c.loans){if(!l.lender||!Number.isFinite(l.discount)||l.discount<0||!Number.isFinite(l.amount)||l.amount<0||!Number.isFinite(l.term)||l.term<0)throw Error('Hay préstamos inválidos.');l.ratePeriod='Quincenal';}}
+    const ids=new Set();for(const c of s.clients){if(typeof c.id!=='string'||!c.name||ids.has(c.id)||(!Number.isFinite(c.capacity)&&c.capacity!==null)||!Array.isArray(c.loans)||!['SNTE 18','GOB MICH'].includes(c.dependency))throw Error('Hay clientes inválidos o repetidos.');ids.add(c.id);for(const l of c.loans){const emptyInactive=l?.active===false&&!String(l?.lender||'').trim()&&Number(l?.rate||0)===0&&Number(l?.discount||0)===0&&Number(l?.amount||0)===0&&Number(l?.term||0)===0&&!String(l?.date||'').trim();if(emptyInactive)continue;if(!l.lender||!Number.isFinite(l.discount)||l.discount<0||!Number.isFinite(l.amount)||l.amount<0||!Number.isFinite(l.term)||l.term<0)throw Error(`Préstamo inválido en ${c.rfc||c.name||c.id}: falta financiera o hay importes/plazo inválidos.`);l.ratePeriod='Quincenal';}}
     for(const c of s.clients){if(!validContactBrand(c.contactBrand))throw Error('Hay una marca del contacto inválida.');if(c.deletedAt&&(typeof c.deletedAt!=='string'||!Number.isFinite(Date.parse(c.deletedAt))))throw Error('Hay una fecha de Papelera inválida.');}
     for(const x of s.sales)if(!x.id||x.clientId&&!ids.has(x.clientId)||!['new','debt'].includes(x.type)||!Number.isFinite(x.amount)||x.amount<=0||!parseDate(x.date))throw Error('Hay ventas inválidas.');
     for(const t of s.tasks)if(!t.id||typeof t.title!=='string'||!t.due||!Number.isFinite(new Date(t.due).getTime()))throw Error('Hay pendientes inválidos.');
@@ -821,6 +918,31 @@ const QuoteJPG = (() => {
     return brands[key] || {name,legal:[],logo:''};
   }
   const legalText = brand => (brand.legal||[]).map(s=>`(${s})`).join(' · ');
+  function bestProductInfo(snapshot){
+    const products=(snapshot?.products||[]).filter(p=>Array.isArray(p.rows)&&p.rows.length);
+    if(!snapshot?.highlightBest||products.length<2)return null;
+    const mode=snapshot.mode==='monto'?'monto':'capacidad';
+    const scored=products.map((p,index)=>{
+      const rows=(p.rows||[]).map(r=>({term:Number(r.term)||0,amount:Number(r.amount)||0,discount:Number(r.discount)||0})).filter(r=>r.term>0);
+      if(!rows.length)return {index,p,label:p.label||p.name,primary:-Infinity,secondary:-Infinity,tertiary:-Infinity,row:null,reason:''};
+      let row=null,primary=-Infinity,secondary=-Infinity,tertiary=-Infinity,reason='';
+      if(mode==='monto'){
+        row=rows.reduce((best,r)=>!best||r.discount<best.discount||(r.discount===best.discount&&r.term>best.term)||(r.discount===best.discount&&r.term===best.term&&r.amount>best.amount)?r:best,null);
+        primary=-(row?.discount||0);
+        secondary=row?.term||0;
+        tertiary=Math.max(...rows.map(r=>r.amount),0);
+        reason=`Menor descuento quincenal estimado (${money(row?.discount||0)}) a ${row?.term||0} quincenas.`;
+      }else{
+        row=rows.reduce((best,r)=>!best||r.amount>best.amount||(r.amount===best.amount&&r.term>best.term)||(r.amount===best.amount&&r.term===best.term&&r.discount<best.discount)?r:best,null);
+        primary=row?.amount||0;
+        secondary=row?.term||0;
+        tertiary=-(row?.discount||0);
+        reason=`Mayor monto estimado (${money(row?.amount||0)}) a ${row?.term||0} quincenas.`;
+      }
+      return {index,p,label:p.label||p.name,primary,secondary,tertiary,row,reason};
+    }).sort((a,b)=>b.primary-a.primary||b.secondary-a.secondary||b.tertiary-a.tertiary||String(a.label).localeCompare(String(b.label),'es'));
+    return scored[0]||null;
+  }
   function loadImage(src) {
     return new Promise((resolve,reject)=>{
       const img=new Image();
@@ -836,7 +958,7 @@ const QuoteJPG = (() => {
     const sources=[...new Set([brandLogo,...products.map(p=>brandFor(p.name,brands).logo)].filter(Boolean))];
     const images=new Map(await Promise.all(sources.map(async src=>[src,await loader(src)])));
     const W=1800,M=64,GAP=32,CW=(W-2*M-GAP)/2,PAD=32;
-    const C={wine:'#642a2c',ink:'#202b3c',muted:'#5d6a7b',line:'#dfe4eb',bg:'#f3f5f8',soft:'#f5edef'};
+    const C={wine:'#642a2c',ink:'#202b3c',muted:'#5d6a7b',line:'#dfe4eb',bg:'#f3f5f8',soft:'#f5edef',best:'#167654',bestSoft:'#e7f5ed',bestLine:'#8fd0aa'};
     const ctx=canvas.getContext('2d');
     if(!ctx)throw Error('Este navegador no puede generar imágenes.');
     const font=(size=24,bold=false)=>{ctx.font=`${bold?'700':'400'} ${size}px Arial, sans-serif`;ctx.textBaseline='top';ctx.textAlign='left';};
@@ -871,6 +993,7 @@ const QuoteJPG = (() => {
       const scale=Math.min(w/img.width,h/img.height),iw=img.width*scale,ih=img.height*scale;
       ctx.drawImage(img,align==='center'?x+(w-iw)/2:x,y+(h-ih)/2,iw,ih);
     }
+    const bestInfo=bestProductInfo(snapshot);
     const profile=snapshot.detailed?[
       [snapshot.profile.age!=null?`${snapshot.profile.age} años`:'',snapshot.gender,snapshot.profession,snapshot.profile.seniorityYears!=null?`Antigüedad: ${snapshot.profile.seniorityYears} años`:'' ].filter(Boolean).join(' · '),
       snapshot.dependency==='SNTE 18'&&snapshot.regime?`Régimen pensionario: ${snapshot.regime}`:'',
@@ -879,13 +1002,13 @@ const QuoteJPG = (() => {
     const profileLines=profile.flatMap(s=>wrap(s,W-2*M-64,25));
     const profileH=profileLines.length?52+profileLines.length*35:0;
     const cardsTop=490+profileH;
-    const cards=products.map(p=>{
+    const cards=products.map((p,index)=>{
       const brand=brandFor(p.name,brands),width=CW-2*PAD;
       const title=wrap(p.label||p.name,width,29,true),legal=wrap(legalText(brand),width,22);
       const note=wrap([brand.note,p.notes,snapshot.detailed?p.rows[0].rule.reason:''].filter(Boolean).join('\n'),width,22);
       const headerH=138+title.length*41+legal.length*31;
       const height=headerH+54+p.rows.length*62+28+note.length*31+48+24;
-      return {p,brand,title,legal,note,headerH,height};
+      return {p,brand,title,legal,note,headerH,height,isBest:bestInfo?bestInfo.index===index:false};
     });
     let cursor=cardsTop;
     for(let i=0;i<cards.length;i+=2){
@@ -899,7 +1022,8 @@ const QuoteJPG = (() => {
     const fortalezaNotice=fortalezaRisk?.basis==='base'?' Fortaleza: regla general indicada para SNTE 18, hasta 120 quincenas desde un mes de servicio para perfiles por debajo del rango de edad o antigüedad de la tabla. Las demás condiciones y financieras siguen sujetas a validación.':' Fortaleza: plazo revisado con la tabla de jubilación de Bayport para SNTE 18. Vigencia y demás condiciones sujetas a validación; las otras financieras conservan sus validaciones pendientes.';
     const maestroApplied=products.some(p=>p.risk?.lender==='CM'&&p.risk.status==='limited');
     const consupagoApplied=products.some(p=>p.risk?.lender==='CS'&&p.risk.status==='limited');
-    const footerLines=wrap('Estimación informativa; no constituye autorización de crédito. Montos en MXN, ajustados al múltiplo de $500 inferior según los cotizadores proporcionados.'+(snapshot.detailed?(fortalezaRisk?fortalezaNotice:'')+(maestroApplied?' Crédito Maestro: restricciones de edad y antigüedad aplicadas; en SNTE 18 también género. Vigencia y demás condiciones sujetas a validación.':'')+(consupagoApplied?' Consupago ESP / VIP: regla por edad aplicada; antes de los 60 años admite hasta 120 quincenas con los factores disponibles.':'')+(!fortalezaRisk&&!maestroApplied&&!consupagoApplied?' Validación de riesgo pendiente: faltan las tablas por edad, género y régimen pensionario.':''):' Cotización rápida: no se evalúa la elegibilidad del solicitante; utiliza la detallada para validar el perfil.'),W-2*M-64,23);
+    const bestFooterNote=bestInfo?` Mejor opción estimada: ${bestInfo.label}. ${bestInfo.reason}`:'';
+    const footerLines=wrap('Estimación informativa; no constituye autorización de crédito. Montos en MXN, ajustados al múltiplo de $500 inferior según los cotizadores proporcionados.'+bestFooterNote+(snapshot.detailed?(fortalezaRisk?fortalezaNotice:'')+(maestroApplied?' Crédito Maestro: restricciones de edad y antigüedad aplicadas; en SNTE 18 también género. Vigencia y demás condiciones sujetas a validación.':'')+(consupagoApplied?' Consupago ESP / VIP: regla por edad aplicada; antes de los 60 años admite hasta 120 quincenas con los factores disponibles.':'')+(!fortalezaRisk&&!maestroApplied&&!consupagoApplied?' Validación de riesgo pendiente: faltan las tablas por edad, género y régimen pensionario.':''):' Cotización rápida: no se evalúa la elegibilidad del solicitante; utiliza la detallada para validar el perfil.'),W-2*M-64,23);
     const footerTop=cursor,footerH=64+footerLines.length*33;
     canvas.width=W;canvas.height=footerTop+footerH+72;
     rect(0,0,W,canvas.height,C.bg);
@@ -913,6 +1037,7 @@ const QuoteJPG = (() => {
     text(snapshot.detailed?'DETALLADA':'RÁPIDA',W-M,96,22,C.wine,true,'right');
     text(snapshot.dependency,M,267,35,C.wine,true);
     text(`${products.length} ${products.length===1?'producto incluido':'productos incluidos'}`,W-M,274,25,C.muted,false,'right');
+    if(bestInfo)text(`Mejor opción estimada: ${bestInfo.label}`,M,304,22,C.best,true);
     rect(M,330,W-2*M,124,C.wine,18);
     text(snapshot.mode==='capacidad'?'CAPACIDAD DE DESCUENTO QUINCENAL':'MONTO SOLICITADO',M+32,351,23,'#ecdce0',true);
     text(money(snapshot.value),M+32,388,40,'#ffffff',true);
@@ -921,12 +1046,14 @@ const QuoteJPG = (() => {
     if(profileH){rect(M,472,W-2*M,profileH-12,'#ffffff',16,C.line);textLines(profileLines,M+32,493,25,C.ink,false,35);}
     for(const card of cards){
       const {x,y,p,brand}=card,tx=x+PAD,tw=CW-2*PAD;
-      rect(x,y,CW,card.height,'#ffffff',18,C.line);
+      rect(x,y,CW,card.height,card.isBest?'#fbfffc':'#ffffff',18,card.isBest?C.bestLine:C.line);
+      if(card.isBest)rect(x+16,y+16,CW-32,8,C.best,4);
       if(brand.logo)drawLogo(brand.logo,tx,y+28,230,74);
       else text(brand.name,tx,y+45,30,C.wine,true);
       const policyApplied=p.risk?.status==='limited',badgeWidth=policyApplied?180:147;
       rect(x+CW-32-badgeWidth,y+41,badgeWidth,38,C.soft,8);
       text(policyApplied?(p.risk.lender==='CS'?'Regla por edad':p.risk.basis==='base'?'Regla general':'Tabla aplicada'):snapshot.detailed?'Por validar':'Estimación',policyApplied?x+CW-32-badgeWidth/2:x+CW-105,y+49,21,C.wine,true,'center');
+      if(card.isBest){rect(x+CW-222,y+88,190,34,C.bestSoft,8);text('Mejor opción',x+CW-127,y+95,20,C.best,true,'center');}
       let ty=textLines(card.title,tx,y+121,29,C.ink,true,41);
       textLines(card.legal,tx,ty+6,22,C.muted,false,31);
       let ry=y+card.headerH;
@@ -1067,6 +1194,21 @@ const archivedClients=()=>state.clients.filter(c=>c.deletedAt);
 const button=(action,label,extra='',cls='')=>`<button class="btn ${cls}" data-action="${action}" ${extra}>${label}</button>`;
 const options=(values,selected='',placeholder='')=>(placeholder?`<option value="">${esc(placeholder)}</option>`:'')+values.map(v=>{const [value,label]=Array.isArray(v)?v:[v,v];return `<option value="${esc(value)}"${String(value)===String(selected)?' selected':''}>${esc(label)}</option>`;}).join('');
 const lenderOptions=(selected='',empty='Selecciona una financiera')=>{const id=PurchaseMatrix.canonicalId(selected)||CG.canonicalLender(selected,state.lenders)||selected,catalog=financialCatalog().map(l=>({id:l.id,name:l.name,legal:l.legal}));if(id&&!catalog.some(l=>l.id===id)){const old=financeById(id,true)||CG.lenderInfo(id,state.lenders);catalog.push({id,name:old.name||String(id),legal:Array.isArray(old.legal)?old.legal.join(' / '):(old.legal||'')});}return options(catalog.map(l=>[l.id,`${l.name} (${l.legal||'razón social pendiente de confirmar'})`]),id,empty);};
+const lenderInputValue=value=>{if(!value)return '';const id=PurchaseMatrix.canonicalId(value)||CG.canonicalLender(value,state.lenders)||value,item=financeById(id,true)||CG.lenderInfo(id,state.lenders);return item?.name||String(value);};
+function resolveLenderInput(value){const raw=String(value||'').trim();if(!raw)return '';const key=CG.norm(raw),exact=financialCatalog().find(item=>[item.id,item.name,item.short,item.legal,...(item.aliases||[])].some(v=>CG.norm(v)===key));if(exact)return exact.id;const matches=financeMatches(raw,2);if(matches.length===1)return matches[0].id;return CG.canonicalLender(raw,state.lenders)||raw;}
+function lenderInputField(index,selected=''){const listId=`lender-list-${index}`,catalog=financialCatalog();return `<div class="field"><label for="l-${index}-lender">Financiera</label><div class="row" style="align-items:stretch;flex-wrap:nowrap"><input id="l-${index}-lender" type="text" list="${listId}" value="${esc(lenderInputValue(selected))}" autocomplete="off" placeholder="Escribe o selecciona una financiera" data-loan-field="lender" data-index="${index}" aria-describedby="l-${index}-legal"><button class="btn slim" type="button" data-action="new-loan-finance" data-index="${index}" style="width:auto;flex:none">+ Nueva</button></div><datalist id="${listId}">${catalog.map(item=>`<option value="${esc(item.name)}">${esc(item.short?item.short+' · '+item.name:item.name)}</option>`).join('')}</datalist></div>`;}
+function normalizeLenderInputElement(el){
+  if(!el||el.dataset?.loanField!=='lender')return false;
+  const raw=String(el.value||'').trim();
+  if(!raw)return false;
+  const resolved=resolveLenderInput(raw);
+  const item=financialCatalog().find(x=>x.id===resolved)||financeById(resolved,true);
+  if(!item)return false;
+  el.value=item.name;
+  const index=Number(el.dataset.index);
+  if(clientDraft&&Number.isInteger(index)&&clientDraft.loans[index])clientDraft.loans[index].lender=item.id;
+  return true;
+}
 const inputField=(id,label,value='',type='text',attrs='')=>`<div class="field"><label for="${id}">${label}</label><input id="${id}" type="${type}" value="${esc(value)}" ${attrs}></div>`;
 const selectField=(id,label,content,attrs='')=>`<div class="field"><label for="${id}">${label}</label><select id="${id}" ${attrs}>${content}</select></div>`;
 const badge=(label,color='')=>`<span class="pill ${color}">${esc(label)}</span>`;
@@ -1077,8 +1219,49 @@ const empty=(title,text,action='')=>`<div class="empty"><div class="empty-icon">
 function pageHead(actions=''){return `<div class="page-head"><div><h1>${sections[current][0]}</h1><p>${sections[current][1]}</p></div><div class="actions">${actions}</div></div>`;}
 function kpi(label,value,sub=''){return `<div class="kpi"><div class="label">${label}</div><strong>${value}</strong><small>${sub}</small></div>`;}
 function tabs(values,selected,action){return `<div class="tabs">${values.map(([id,title])=>`<button class="${id===selected?'active':''}" data-action="${action}" data-id="${id}" aria-pressed="${id===selected}">${title}</button>`).join('')}</div>`;}
+
+let dataLoadingDepth=0;
+function showDataLoading(title='Procesando información…',message='Preparando los datos del portal.'){
+  dataLoadingDepth++;
+  const overlay=$('data-loading');
+  if(!overlay)return;
+  $('data-loading-title').textContent=title;
+  $('data-loading-message').textContent=message;
+  overlay.hidden=false;
+  document.body.setAttribute('aria-busy','true');
+}
+function updateDataLoading(title,message){
+  if(title&&$('data-loading-title'))$('data-loading-title').textContent=title;
+  if(message&&$('data-loading-message'))$('data-loading-message').textContent=message;
+}
+function hideDataLoading(force=false){
+  dataLoadingDepth=force?0:Math.max(0,dataLoadingDepth-1);
+  if(dataLoadingDepth)return;
+  const overlay=$('data-loading');
+  if(overlay)overlay.hidden=true;
+  document.body.removeAttribute('aria-busy');
+}
+function loadingCopy(section){
+  const count=activeClients().length;
+  const copies={
+    clients:['Cargando clientes…',`Organizando ${count} expediente${count===1?'':'s'} para mostrar la lista.`],
+    capacity:['Cargando capacidades…',`Revisando el estado de ${count} cliente${count===1?'':'s'}.`],
+    green:['Cargando Cartera Verde…',`Clasificando clientes con capacidad disponible.`],
+    debt:['Cargando Compra de Deuda…',`Revisando clientes y préstamos activos.`]
+  };
+  return copies[section]||['Procesando información…','Preparando los datos del portal.'];
+}
+function renderWithLoading(section=current){
+  const [title,message]=loadingCopy(section);
+  showDataLoading(title,message);
+  requestAnimationFrame(()=>setTimeout(()=>{
+    try{render();}
+    finally{hideDataLoading();}
+  },20));
+}
+
 function renderNav(){const counts={clients:activeClients().length,capacity:activeClients().filter(c=>!CG.reviewed(c,'capacity')).length,green:activeClients().filter(c=>CG.route(c.capacity)==='green').length,debt:activeClients().filter(c=>CG.route(c.capacity)==='debt').length,finances:financialCatalog().length,tasks:activeTasks().filter(t=>!t.done).length+activeOpportunities().filter(o=>!o.done).length};$('navigation').innerHTML=Object.entries(sections).map(([id,[name,,glyph]])=>`<button data-action="nav" data-id="${id}" class="${current===id?'active':''}" ${current===id?'aria-current="page"':''}>${icon(glyph)}<span>${name}</span>${counts[id]!==undefined?`<span class="nav-count">${counts[id]}</span>`:''}</button>`).join('');const overdue=activeTasks().filter(t=>!t.done&&new Date(t.due)<=new Date()).length,opportunities=activeOpportunities().filter(o=>!o.done).length;$('bell').innerHTML=icon('bell')+(overdue+opportunities?'<span class="notification-dot"></span>':'');$('bell').setAttribute('aria-label',`Pendientes: ${overdue} vencidos y ${opportunities} oportunidades por revisar`);$('breadcrumb').textContent=sections[current][0];}
-function navigate(id){if(!sections[id])return;current=id;query='';showReviewed=true;debtFilter='all';$('app-view').classList.remove('menu-open');render();window.scrollTo({top:0,behavior:'instant'});}
+function navigate(id){if(!sections[id])return;current=id;query='';showReviewed=true;debtFilter='all';$('app-view').classList.remove('menu-open');window.scrollTo({top:0,behavior:'instant'});if(['clients','capacity','green','debt'].includes(id))renderWithLoading(id);else render();}
 function render(){renderNav();const fn={quotes:renderQuotes,clients:renderClients,capacity:renderCapacity,green:renderPortfolio,debt:renderPortfolio,deals:renderDeals,finances:renderFinances,stats:renderStats,tasks:renderTasks}[current];fn();}
 let cloudUnsub=null,cloudFirstSnapshot=true;
 const CLOUD_COLLECTION='credigob_comercial',CLOUD_DOC='estado';
@@ -1091,10 +1274,15 @@ function login(demo=false){
 }
 function attachCloudState(){
   cloudFirstSnapshot=true;
+  showDataLoading('Conectando con CREDIGOB…','Descargando la base compartida del equipo.');
   if(cloudUnsub)cloudUnsub();
   cloudUnsub=fbDb.collection(CLOUD_COLLECTION).doc(CLOUD_DOC).onSnapshot(snap=>{
     try{
       state=snap.exists&&snap.data().payload?CG.validateState(JSON.parse(snap.data().payload)):CG.emptyState();
+      const migratedPoliceStatuses=migratePoliceStatuses(state);
+      if(migratedPoliceStatuses){
+        fbDb.collection(CLOUD_COLLECTION).doc(CLOUD_DOC).set({payload:JSON.stringify(state),updatedAt:firebase.firestore.FieldValue.serverTimestamp()});
+      }
       syncCustomPurchaseCatalog(state);if(typeof PurchaseMatrix!=='undefined')PurchaseMatrix.ensure(state);
       storageError='';
       if(cloudFirstSnapshot){
@@ -1109,12 +1297,23 @@ function attachCloudState(){
           syncCustomPurchaseCatalog(state);if(typeof PurchaseMatrix!=='undefined')PurchaseMatrix.ensure(state);
         }catch(e){baseImportNotice='No se pudo incorporar la base inicial: '+e.message+'. La base existente se conserva.';}
       }
-      render();
-      if(baseImportNotice){toast(baseImportNotice);baseImportNotice='';}
-      else if(state.legacy?.clients?.length)toast('Se recuperaron los registros del prototipo anterior. Revisa fechas de plaza y régimen pendientes.');
-      checkReminders();
-    }catch(e){storageError=e.message;toast('No se pudo leer la base en la nube: '+e.message,true);}
-  },err=>{storageError=err.message;toast('No se pudo conectar con la base en la nube: '+err.message,true);});
+      const firstLoadVisible=!$('data-loading')?.hidden;
+      if(firstLoadVisible)updateDataLoading('Procesando clientes…',`Preparando ${activeClients().length} expediente${activeClients().length===1?'':'s'} de la base compartida.`);
+      const finishCloudRender=()=>{
+        try{
+          render();
+          if(baseImportNotice){toast(baseImportNotice);baseImportNotice='';}
+          else if(migratedPoliceStatuses)toast(`${migratedPoliceStatuses} policía${migratedPoliceStatuses===1?'':'s'} marcado${migratedPoliceStatuses===1?'':'s'} automáticamente como Interino por sus notas.`);
+          else if(state.legacy?.clients?.length)toast('Se recuperaron los registros del prototipo anterior. Revisa fechas de plaza y régimen pendientes.');
+          checkReminders();
+        }finally{
+          if(firstLoadVisible)hideDataLoading(true);
+        }
+      };
+      if(firstLoadVisible)requestAnimationFrame(()=>setTimeout(finishCloudRender,20));
+      else finishCloudRender();
+    }catch(e){storageError=e.message;hideDataLoading(true);toast('No se pudo leer la base en la nube: '+e.message,true);}
+  },err=>{storageError=err.message;hideDataLoading(true);toast('No se pudo conectar con la base en la nube: '+err.message,true);});
 }
 const quoteProductLabel=product=>typeof product==='string'?product:product?.label||product?.name||'';
 function financeHeading(product){const name=typeof product==='string'?product:product.name,b=QuoteJPG.brandFor(name,FINANCE_BRANDS);return `<div class="bank-identity">${b.logo?`<img class="bank-logo" src="${b.logo}" alt="Logotipo de ${esc(b.name)}">`:''}<strong>${esc(quoteProductLabel(product))}</strong>${b.legal.length?`<small class="bank-legal">${esc(QuoteJPG.legalText(b))}</small>`:''}${b.note?`<small class="bank-legal-note">${esc(b.note)}</small>`:''}</div>`;}
@@ -1203,7 +1402,7 @@ function updateQuoteResults(){
   $('quote-count').textContent=`${active.length} productos`;
   const manual=currentQuoteResults.filter(f=>f.risk?.status==='manual');
   if(manual.length)$('quote-count').textContent=active.length?`${active.length} productos · ${manual.length} manuales`:`${manual.length} cotizaciones manuales`;
-  const riskNotice=quote.dependency==='SNTE 18'?'Consupago ESP y VIP: hasta 120 quincenas antes de los 60 años; desde los 60, cotización manual a un año (24 quincenas), sin edad máxima. Solo consideran la edad. Crédito Maestro: tabla por género, edad actual y años cotizados (antigüedad). Fortaleza conserva su tabla de jubilación y regla general desde un mes de servicio. Estas reglas aplican a crédito nuevo y compra de cartera. No constituye aprobación.':quote.profession==='Magisterio'?'Magisterio de GOB MICH: las condiciones específicas están pendientes de recibir. No se aplican las reglas de Maestro SEP / SNTE 18. Las opciones son estimaciones sujetas a validación.':'Crédito Maestro: de 18 a 62 años y 11 meses; antigüedad desde 2 y menor de 25 años. Policías y custodios hasta 48; burocracia hasta 120, con tasas mayores de 48 pendientes de confirmar. Crédito nuevo y compra de cartera comparten estas restricciones. Las otras financieras conservan sus reglas.';
+  const riskNotice=quote.dependency==='SNTE 18'?'Consupago ESP y VIP: hasta 120 quincenas antes de los 60 años; desde los 60, cotización manual a un año (24 quincenas), sin edad máxima. Solo consideran la edad. Crédito Maestro: tabla por género, edad actual y años cotizados (antigüedad). Fortaleza conserva su tabla de jubilación y regla general desde un mes de servicio. Estas reglas aplican a crédito nuevo y compra de cartera. No constituye aprobación.':quote.profession==='Magisterio'?'Magisterio de GOB MICH: para Crédito Maestro se usa la misma tabla de SNTE 18 / Maestro SEP por género, edad actual y años cotizados (antigüedad), tanto en crédito nuevo como en compra de cartera. Las demás financieras conservan las reglas de GOB MICH. No constituye aprobación.':'Crédito Maestro: de 18 a 62 años y 11 meses; antigüedad desde 2 y menor de 25 años. Policías y custodios hasta 48; burocracia hasta 120, con tasas mayores de 48 pendientes de confirmar. Crédito nuevo y compra de cartera comparten estas restricciones. Las otras financieras conservan sus reglas.';
   const profileSummary=[profile.age!=null?`${profile.age} años actuales`:'',quote.gender,quote.profession,profile.seniorityYears!=null?`Antigüedad ${profile.seniorityYears} años`:'' ,quote.start?`Ingreso: ${displayDate(quote.start)}`:'',quote.dependency==='SNTE 18'?quote.regime:''].filter(Boolean).map(esc).join(' · ');
   $('quote-context').innerHTML=quote.detailed?`${quoteRuleRecovery?`<div class="note amber" role="alert" style="margin-bottom:12px"><b>Recuperación automática.</b> ${esc(quoteRuleRecovery)}</div>`:''}<div class="note amber" style="margin-bottom:18px"><b>Validación de condiciones.</b> ${riskNotice}${profileSummary?`<div class="small" style="margin-top:7px">Perfil: ${profileSummary}</div>`:''}</div>`:'';
   if(!visible.length){$('quote-results').innerHTML=`<div class="panel full">${empty(+quote.value>0?'Sin opciones para este perfil':'Ingresa una capacidad o monto',+quote.value>0?'Revisa la cantidad, los mínimos y los plazos permitidos.':'El comparativo usará los factores de la dependencia seleccionada.')}</div>`;}else $('quote-results').innerHTML=visible.map(quoteBankCard).join('');
@@ -1248,7 +1447,7 @@ function openFinanceEditor(id='',context='general'){
   const d=$('finance-dialog');d.innerHTML=`<div class="dialog-head"><div><h2 id="finance-dialog-title">${existing?'Editar financiera':'Agregar financiera'}</h2><p class="muted small" style="margin:4px 0 0">${existing?'Puedes modificar también las financieras del catálogo base.':'Se incorporará al catálogo de clientes y a los convenios seleccionados.'}</p></div><button class="btn ghost" type="button" data-action="close-finance" aria-label="Cerrar">${icon('close')}</button></div><div class="dialog-body"><form id="finance-form" data-editing="${esc(existing?.id||'')}"><div class="form-grid">${inputField('f-name','Nombre comercial',f.name,'text','required maxlength="160" autocomplete="off" placeholder="Ej. Total Fin"')}${inputField('f-short','Siglas',f.short||'','text','maxlength="8" autocomplete="off" placeholder="Ej. TF"')}${inputField('f-legal','Razón social',Array.isArray(f.legal)?f.legal.join(' / '):f.legal||'','text','maxlength="240" placeholder="Opcional"')}<div class="field"><label for="f-aliases">Otros nombres o alias</label><input id="f-aliases" value="${esc((f.aliases||[]).join(', '))}" maxlength="300" placeholder="Sepáralos con comas"><small>Sirve para que el buscador detecte de qué financiera hablas aunque escribas otro nombre.</small></div><div class="full field"><span>Convenios en los que debe aparecer</span><div class="row"><label class="check"><input id="f-gob" type="checkbox" ${f.dependencies?.includes('GOB')?'checked':''}> GOB MICH</label><label class="check"><input id="f-snte" type="checkbox" ${f.dependencies?.includes('SNTE')?'checked':''}> SNTE 18</label></div></div></div><div id="finance-match-preview" class="full" style="margin-top:16px">${financeDialogMatchHTML(f.name,f.id)}</div><p id="finance-error" class="negative small" role="alert"></p></form></div><div class="dialog-footer"><button class="btn" type="button" data-action="close-finance">Cancelar</button><button class="btn primary" type="submit" form="finance-form">Guardar financiera</button></div>`;
   d.showModal();$('finance-form').onsubmit=e=>saveFinance(e,existing?.id||'');setTimeout(()=>$('f-name')?.focus(),0);
 }
-function closeFinanceEditor(){const context=financeEditorContext,loanMatch=/^loan:(\d+)$/.exec(context);if(loanMatch&&clientDraft){const index=Number(loanMatch[1]),el=$(`l-${index}-lender`);if(el&&clientDraft.loans[index])el.value=CG.canonicalLender(clientDraft.loans[index].lender,state.lenders);}const d=$('finance-dialog');if(d.open)d.close();financeEditorContext='';}
+function closeFinanceEditor(){const context=financeEditorContext,loanMatch=/^loan:(\d+)$/.exec(context);if(loanMatch&&clientDraft){const index=Number(loanMatch[1]),el=$(`l-${index}-lender`);if(el&&clientDraft.loans[index])el.value=lenderInputValue(CG.canonicalLender(clientDraft.loans[index].lender,state.lenders));}const d=$('finance-dialog');if(d.open)d.close();financeEditorContext='';}
 function saveFinance(event,editingId=''){
   event.preventDefault();const name=$('f-name').value.trim(),short=financeInitials(name,$('f-short').value),legal=$('f-legal').value.trim(),aliases=$('f-aliases').value.split(',').map(x=>x.trim()).filter(Boolean),dependencies=['GOB','SNTE'].filter(d=>d==='GOB'?$('f-gob').checked:$('f-snte').checked),err=$('finance-error');
   if(!name){err.textContent='Escribe el nombre de la financiera.';return;}if(!dependencies.length){err.textContent='Selecciona por lo menos un convenio.';return;}
@@ -1271,8 +1470,37 @@ function depToolbar(){return `<div class="toolbar">${tabs([['GOB MICH','GOB MICH
 function renderCapacity(){if(currentDep==='all')currentDep='GOB MICH';const clients=activeClients().filter(c=>c.dependency===currentDep);const reviewed=clients.filter(c=>CG.reviewed(c,'capacity')).length;$('main').innerHTML=pageHead(button('export-clients',`${icon('download')} Exportar lista`))+`<div class="kpis">${kpi('Por consultar',clients.length-reviewed,'Primero en la lista')}${kpi('Consultados este mes',reviewed,'Al final de la lista')}${kpi('GOB MICH',activeClients().filter(c=>c.dependency==='GOB MICH').length,'Clientes registrados')}${kpi('SNTE 18',activeClients().filter(c=>c.dependency==='SNTE 18').length,'Clientes registrados')}</div>${depToolbar()}<div class="panel" id="capacity-results"></div><p class="footer-note">Guardar una capacidad registra su fecha y marca la consulta del mes. Puedes marcar “Consultado” sin cambiar la última fecha de actualización. Al comenzar cada mes, todos vuelven a quedar sin consultar; se conserva el historial anterior.</p>`;renderCapacityRows();}
 function reviewButton(c,key){const done=CG.reviewed(c,key);return button('review',`${icon(done?'check':'clock')}${done?(key==='capacity'?'Consultado':'Revisado'):(key==='capacity'?'Marcar consultado':'Marcar revisado')}`,`data-id="${esc(c.id)}" data-key="${key}" aria-pressed="${done}"`,'slim '+(done?'soft':''));}
 function renderCapacityRows(){const rows=CG.sortReview(filteredClients({dependency:currentDep}),'capacity').filter(c=>showReviewed||!CG.reviewed(c,'capacity'));$('capacity-results').innerHTML=rows.length?`<div class="table-wrap"><table><thead><tr><th>RFC</th><th>Capacidad ($)</th><th>Celular</th><th>Última actualización</th><th>Consulta del mes</th></tr></thead><tbody>${rows.map(c=>`<tr class="${CG.reviewed(c,'capacity')?'reviewed-row':''}"><td class="mono">${button('client-detail',esc(c.rfc),`data-id="${esc(c.id)}" title="${esc(c.name)}"`,'slim ghost')}</td><td><div class="row"><input class="table-input" type="number" step="0.01" id="cap-${esc(c.id)}" value="${Number.isFinite(c.capacity)?c.capacity:''}" placeholder="Pendiente" aria-label="Capacidad de ${esc(c.name)}">${button('save-capacity','Guardar',`data-id="${esc(c.id)}"`,'slim')}</div></td><td>${contactPhoneHTML(c)}</td><td>${c.capacityUpdatedAt?displayDate(c.capacityUpdatedAt):'Pendiente'}</td><td>${reviewButton(c,'capacity')}</td></tr>`).join('')}</tbody></table></div>`:empty('La lista está al día',query?'No hay coincidencias.':'No hay clientes pendientes con estos filtros.');}
+
+function policeStatusFromNotes(c){
+  if(!c||c.dependency!=='GOB MICH'||CG.norm(c.profession)!=='POLICIA')return '';
+  const notes=CG.norm(c.notes||'');
+  if(/\bINTERIN[OA]\b/.test(notes))return 'Interino';
+  return '';
+}
+function policeStatusValue(c){
+  if(!c||c.dependency!=='GOB MICH'||CG.norm(c.profession)!=='POLICIA')return '';
+  return ['Base','Interino'].includes(c.policeStatus)?c.policeStatus:policeStatusFromNotes(c);
+}
+function policeStatusBadge(c){
+  const status=policeStatusValue(c);
+  return status?badge(status,status==='Base'?'green':'amber'):badge('Plaza por definir','amber');
+}
+function clientIdentityBadges(c){
+  return `${badge(c.dependency,'wine')}${c.profession?badge(c.profession):''}${CG.norm(c.profession)==='POLICIA'?policeStatusBadge(c):''}`;
+}
+function migratePoliceStatuses(targetState){
+  let changed=0;
+  for(const c of targetState?.clients||[]){
+    if(c.dependency==='GOB MICH'&&CG.norm(c.profession)==='POLICIA'&&!['Base','Interino'].includes(c.policeStatus||'')){
+      const detected=policeStatusFromNotes(c);
+      if(detected){c.policeStatus=detected;changed++;}
+    }
+  }
+  return changed;
+}
+
 function renderPortfolio(){if(currentDep==='all')currentDep='GOB MICH';const count=activeClients().filter(c=>CG.route(c.capacity)===current&&c.dependency===currentDep).length;$('main').innerHTML=pageHead(button('export-clients',`${icon('download')} Exportar cartera`))+`<div class="toolbar">${badge(current==='green'?'CAPACIDAD ≥ $140':'−$800 ≤ CAPACIDAD < $140',current==='green'?'green':'wine')}<span class="muted small">Clasificación automática · ${count} clientes de ${esc(currentDep)}</span></div>${depToolbar()}${current==='debt'?`<div class="toolbar debt-filter-toolbar">${selectField('debt-status-filter','Filtrar por estatus',options(CG.debtFilters,debtFilter))}<span class="small muted">Las opciones de compra y refinanciamiento incluyen clientes con ambos tipos de préstamos.</span></div>`:''}<div class="panel portfolio-list" id="portfolio-results"></div>`;renderPortfolioRows();}
-function meta(c){return `<dl class="meta-grid">${[['RFC',c.rfc],['CURP',c.curp],['Celular',c.phone],['Marca del contacto',c.contactBrand],['Verificación',c.verified?'Verificado':'Pendiente'],['Dependencia',c.dependency+(c.sector?' · '+c.sector:'')],['Área',c.dependency==='GOB MICH'?(c.sector||'Pendiente'):'No aplica'],['Profesión',c.profession],['Género',c.gender],['Nacimiento',c.birth?c.birth.replaceAll('-','/'):'Pendiente'],['Edad',CG.years(c.birth)===null?'Pendiente':CG.years(c.birth)+' años'],['Fecha de plaza',c.start?displayDate(c.start):'Pendiente'],['Antigüedad',CG.months(c.start)===null?'Pendiente':`${Math.floor(CG.months(c.start)/12)} años, ${CG.months(c.start)%12} meses`],['Régimen pensionario',c.dependency==='SNTE 18'?(c.regime||'Pendiente'):'No aplica'],['Número de empleado',c.employeeNumber]].map(([l,v])=>`<div><dt>${l}</dt><dd>${esc(pendingValue(v))}</dd></div>`).join('')}</dl>`;}
+function meta(c){return `<dl class="meta-grid">${[['RFC',c.rfc],['CURP',c.curp],['Celular',c.phone],['Marca del contacto',c.contactBrand],['Verificación',c.verified?'Verificado':'Pendiente'],['Dependencia',c.dependency+(c.sector?' · '+c.sector:'')],['Área',c.dependency==='GOB MICH'?(c.sector||'Pendiente'):'No aplica'],['Profesión',c.profession],['Tipo de plaza',CG.norm(c.profession)==='POLICIA'?(policeStatusValue(c)||'Pendiente'):'No aplica'],['Género',c.gender],['Nacimiento',c.birth?c.birth.replaceAll('-','/'):'Pendiente'],['Edad',CG.years(c.birth)===null?'Pendiente':CG.years(c.birth)+' años'],['Fecha de plaza',c.start?displayDate(c.start):'Pendiente'],['Antigüedad',CG.months(c.start)===null?'Pendiente':`${Math.floor(CG.months(c.start)/12)} años, ${CG.months(c.start)%12} meses`],['Régimen pensionario',c.dependency==='SNTE 18'?(c.regime||'Pendiente'):'No aplica'],['Número de empleado',c.employeeNumber]].map(([l,v])=>`<div><dt>${l}</dt><dd>${esc(pendingValue(v))}</dd></div>`).join('')}</dl>`;}
 
 function loanGroupsHTML(c){const groups=CG.groupLoans(c.loans,CG.dateStr(),state.lenders);return groups.length?groups.map(g=>`<div class="loan-group"><div>${lenderIdentityHTML(g.lender)}<div class="small muted">${g.loans.length} préstamo(s) · ${g.loans.filter(l=>l.progress.eligible).length} con antigüedad para compra</div></div><div><b class="money">${fmt(g.discount)} / quincena</b><div class="small muted">Para compra: ${fmt(g.eligibleDiscount)} · Refinanciamiento: ${fmt(g.refinanceDiscount)}${g.pendingDiscount?' · Sin validar: '+fmt(g.pendingDiscount):''}</div></div></div>`).join(''):`<div class="note" style="margin-top:16px">${c.loans.length?'Los plazos registrados han concluido; confirma si quedan saldos.':'Sin préstamos activos registrados. Completa el expediente para evaluar una compra.'}</div>`;}
 function debtStatusHTML(c){return `<span class="debt-status" aria-label="Estatus automático">${CG.debtStatus(c,CG.dateStr()).labels.map(s=>`<span class="pill ${s.color}" title="${s.count?`${s.count} préstamo(s) · `:''}Clasificación estimada por antigüedad">${esc(s.label)}</span>`).join('')}</span>`;}
@@ -1282,8 +1510,8 @@ function visiblePortfolioClients(){return CG.sortReview(filteredClients({depende
 function renderPortfolioRows(){
   const rows=visiblePortfolioClients();
   $('portfolio-results').innerHTML=rows.length?
-    `<div class="portfolio-columns" aria-hidden="true"><span>${current==='debt'?'Nombre / estatus':'Nombre'}</span><span>Dependencia</span><span>Capacidad quincenal</span></div>`+
-    rows.map(c=>`<button type="button" class="portfolio-row" data-action="client-detail" data-id="${esc(c.id)}" aria-haspopup="dialog" aria-controls="dialog" aria-label="Abrir expediente de ${esc(c.name)}, ${esc(c.dependency)}, capacidad quincenal ${esc(fmt(c.capacity))}${current==='debt'?`, estatus: ${esc(CG.debtStatus(c,CG.dateStr()).labels.map(s=>s.label).join(' y '))}`:''}"><span class="portfolio-name">${esc(c.name)}${current==='debt'?debtStatusHTML(c):''}</span><span class="portfolio-dependency">${badge(c.dependency,'wine')}</span><span class="portfolio-capacity">${capacityHTML(c)}${icon('arrow')}</span></button>`).join('')+
+    `<div class="portfolio-columns" aria-hidden="true"><span>${current==='debt'?'Nombre / estatus':'Nombre'}</span><span>Dependencia / profesión</span><span>Capacidad quincenal</span></div>`+
+    rows.map(c=>`<button type="button" class="portfolio-row" data-action="client-detail" data-id="${esc(c.id)}" aria-haspopup="dialog" aria-controls="dialog" aria-label="Abrir expediente de ${esc(c.name)}, ${esc(c.dependency)}, ${esc(c.profession||'profesión pendiente')}${CG.norm(c.profession)==='POLICIA'?`, ${esc(policeStatusValue(c)||'tipo de plaza pendiente')}`:''}, capacidad quincenal ${esc(fmt(c.capacity))}${current==='debt'?`, estatus: ${esc(CG.debtStatus(c,CG.dateStr()).labels.map(s=>s.label).join(' y '))}`:''}"><span class="portfolio-name">${esc(c.name)}${current==='debt'?debtStatusHTML(c):''}</span><span class="portfolio-dependency">${clientIdentityBadges(c)}</span><span class="portfolio-capacity">${capacityHTML(c)}${icon('arrow')}</span></button>`).join('')+
     `<div class="caption">${rows.length} clientes · Selecciona un cliente para ver su expediente completo.${current==='debt'?' El estatus se estima por préstamo: aportadas menos 4 ≥ 24 para compra; con menos, refinanciamiento. Pueden aparecer ambos estatus.':''}</div>`:
     empty('No hay clientes con estos filtros',current==='green'?'Los clientes aparecerán aquí al registrar una capacidad desde $140.':debtFilter!=='all'?'Prueba otro estatus, dependencia o búsqueda.':'Se incluyen capacidades entre −$800 y menos de $140; la viabilidad se calcula por préstamo.');
 }
@@ -1317,17 +1545,17 @@ function restoreClientFromTrash(id){
 function detailClient(id){
   const c=getClient(id);if(!c)return;
   const events=state.history.filter(e=>e.clientId===id).slice(-8).reverse();
-  openDialog(esc(c.name),`<div id="client-detail-content" data-client-id="${esc(c.id)}"><div class="row between" style="margin-bottom:24px">${badge(c.dependency,'wine')}<strong style="font-size:26px">${capacityHTML(c)}</strong></div>${portfolioDetailActions(c)}${clientPendingHTML(c)}${meta(c)}${originalClientHTML(c)}${c.notes?`<div class="note" style="margin-top:20px">${esc(c.notes)}</div>`:''}<div class="dialog-section"><h3>Préstamos y descuentos por financiera</h3>${loanGroupsHTML(c)}${loanDetailsTable(c.loans)}</div><div class="dialog-section"><h3>Historial del expediente</h3>${events.length?events.map(e=>`<p class="small"><b>${esc(e.motive)}</b><br><span class="muted">${Number.isFinite(new Date(e.date).getTime())?displayDate(e.date,true):esc(e.date)}</span></p>`).join(''):'<p class="muted small">Sin movimientos registrados.</p>'}</div></div>`,button('delete-client','Eliminar cliente',`data-id="${esc(id)}"`,'danger')+button('export-one','Exportar expediente',`data-id="${esc(id)}"`)+button('quote-client','Cotizar',`data-id="${esc(id)}"`)+button('edit-client',`${icon('edit')} Editar cliente`,`data-id="${esc(id)}"`,'primary'));
+  openDialog(esc(c.name),`<div id="client-detail-content" data-client-id="${esc(c.id)}"><div class="row between" style="margin-bottom:24px"><div class="row">${clientIdentityBadges(c)}</div><strong style="font-size:26px">${capacityHTML(c)}</strong></div>${portfolioDetailActions(c)}${clientPendingHTML(c)}${meta(c)}${originalClientHTML(c)}${c.notes?`<div class="note" style="margin-top:20px">${esc(c.notes)}</div>`:''}<div class="dialog-section"><h3>Préstamos y descuentos por financiera</h3>${loanGroupsHTML(c)}${loanDetailsTable(c.loans)}</div><div class="dialog-section"><h3>Historial del expediente</h3>${events.length?events.map(e=>`<p class="small"><b>${esc(e.motive)}</b><br><span class="muted">${Number.isFinite(new Date(e.date).getTime())?displayDate(e.date,true):esc(e.date)}</span></p>`).join(''):'<p class="muted small">Sin movimientos registrados.</p>'}</div></div>`,button('delete-client','Eliminar cliente',`data-id="${esc(id)}"`,'danger')+button('export-one','Exportar expediente',`data-id="${esc(id)}"`)+button('quote-client','Cotizar',`data-id="${esc(id)}"`)+button('edit-client',`${icon('edit')} Editar cliente`,`data-id="${esc(id)}"`,'primary'));
 }
 function loanDetailsTable(loans){if(!loans.length)return '';return `<div class="table-wrap" style="margin-top:18px"><table><thead><tr><th>Financiera</th><th>Tasa quincenal</th><th>Monto</th><th>Descuento</th><th>Dispersión</th><th>Plazo</th><th>Aportadas*</th><th>Restantes*</th><th>Aportadas − 4</th><th>Clasificación</th></tr></thead><tbody>${loans.map(l=>{const p=CG.loanProgress(l);return `<tr><td>${lenderIdentityHTML(l.lender)}</td><td>${l.rate}%</td><td class="money">${fmt(l.amount)}</td><td class="money">${fmt(l.discount)}</td><td>${l.date?displayDate(l.date):'Pendiente'}</td><td>${l.term}</td><td>${p.valid?p.paid:'—'}</td><td>${p.valid?p.remaining:'—'}</td><td>${p.valid?p.eligiblePaid:'—'}</td><td>${badge(l.active===false?'Inactivo':p.label,p.eligible?'green':'amber')}</td></tr>`;}).join('')}</tbody></table></div><p class="footer-note">*Estimación por cortes del 15 y último día del mes, posteriores a la dispersión. No confirma pagos efectivamente cobrados. Compra: aportadas menos 4 ≥ 24; los plazos concluidos se excluyen.</p>`;}
 function editClient(id='',snapshot=null){
   clearTimeout(duplicateTimer);duplicateTimer=null;
   if(duplicateDraft&&id!==duplicateDraft.targetId)duplicateDraft=null;
-  const existing=getClient(id);clientDraft=existing?JSON.parse(JSON.stringify(existing)):snapshot?JSON.parse(JSON.stringify(snapshot.client)):{id:uid(),name:'',rfc:'',curp:'',phone:'',dependency:'GOB MICH',sector:'Burocracia',profession:'Burocracia',gender:'',birth:'',start:'',regime:'',verified:false,capacity:0,loans:[],notes:'',reviews:{},createdAt:new Date().toISOString(),capacityUpdatedAt:''};
+  const existing=getClient(id);clientDraft=existing?JSON.parse(JSON.stringify(existing)):snapshot?JSON.parse(JSON.stringify(snapshot.client)):{id:uid(),name:'',rfc:'',curp:'',phone:'',dependency:'GOB MICH',sector:'Burocracia',profession:'Burocracia',policeStatus:'',gender:'',birth:'',start:'',regime:'',verified:false,capacity:0,loans:[],notes:'',reviews:{},createdAt:new Date().toISOString(),capacityUpdatedAt:''};
   const c=clientDraft,partial=CG.importedClient(c);
   openDialog(existing?'Editar cliente':'Agregar cliente',`<form id="client-form">${duplicateDraft?.targetId===c.id?'<div class="note" style="margin-bottom:18px">Coincidencia encontrada. Estás editando el expediente guardado; los datos de la captura anterior no se han aplicado. Puedes volver a esa captura mientras este formulario esté abierto.</div>':''}${partial?clientPendingHTML(c):''}<div class="form-grid">${inputField('c-rfc','RFC (con o sin homoclave)',c.rfc,'text','required maxlength="13" pattern="[A-Za-zÑñ&]{4}[0-9]{6}([A-Za-z0-9]{3})?" title="Escribe las cuatro letras y los seis números de fecha; la homoclave de tres caracteres es opcional." autocomplete="off" placeholder="DIGF8802119K0" style="text-transform:uppercase"')}${inputField('c-name','Nombre completo',c.name,'text','required maxlength="160" autocomplete="name"')}${inputField('c-curp','CURP',c.curp,'text','required minlength="18" maxlength="18" pattern="[A-Za-zÑñ0-9]{18}" autocomplete="off" style="text-transform:uppercase"')}<div class="contact-fields">${inputField('c-phone','Número de celular',c.phone,'tel','required autocomplete="tel" maxlength="20" placeholder="10 dígitos"')}${selectField('c-contact-brand','Marca del contacto',options(CG.contactBrands,c.contactBrand||'','Pendiente'))}</div>
   <div id="duplicate-warning" class="full" aria-live="polite" hidden></div>
-  ${selectField('c-dep','Dependencia',options(['GOB MICH','SNTE 18'],c.dependency))}<div id="sector-wrap">${selectField('c-sector','Área de GOB MICH',options(['Burocracia','Magisterio'],c.sector,'Pendiente'))}</div>${selectField('c-profession','Profesión',options(c.dependency==='SNTE 18'?['Maestro SEP']:['Policía','Custodio','Burocracia','Magisterio'],c.profession,'Pendiente'))}${selectField('c-gender','Género',options(['Femenino','Masculino','Otro / no especifica'],c.gender,partial?'Pendiente':'Selecciona'),'required')}
+  ${selectField('c-dep','Dependencia',options(['GOB MICH','SNTE 18'],c.dependency))}<div id="sector-wrap">${selectField('c-sector','Área de GOB MICH',options(['Burocracia','Magisterio'],c.sector,'Pendiente'))}</div>${selectField('c-profession','Profesión',options(c.dependency==='SNTE 18'?['Maestro SEP']:['Policía','Custodio','Burocracia','Magisterio'],c.profession,'Pendiente'))}<div id="police-status-wrap">${selectField('c-police-status','Tipo de plaza del policía',options(['Base','Interino'],policeStatusValue(c),partial?'Pendiente':'Selecciona'))}</div>${selectField('c-gender','Género',options(['Femenino','Masculino','Otro / no especifica'],c.gender,partial?'Pendiente':'Selecciona'),'required')}
   <div class="field"><label for="c-birth">Fecha de nacimiento (año/mes/día)</label><input id="c-birth" type="text" value="${esc((c.birth||'').replaceAll('-','/'))}" placeholder="AAAA/MM/DD" maxlength="10" pattern="[0-9]{4}/[0-9]{2}/[0-9]{2}" aria-describedby="birth-help age-label" required><small id="birth-help">Se completa automáticamente al escribir el RFC. Formato: AAAA/MM/DD.</small><small id="age-label" aria-live="polite"></small></div><div class="field"><label for="c-start">Fecha de plaza</label><input id="c-start" type="date" value="${esc(c.start)}" max="${CG.dateStr()}" required><small id="seniority-label"></small></div>
   <div class="note full small">Después de las cuatro letras del RFC, los seis números indican año, mes y día. Ejemplo: DIGF8802119K0 → 1988/02/11. No necesitas terminar la homoclave para completar la fecha. Puedes corregir el siglo; la CURP también ayuda a identificarlo.</div>
   <div id="regime-wrap" class="full"><button type="button" class="btn soft" data-action="toggle-regime" aria-expanded="${!!c.regime}">Régimen pensionario SNTE 18</button><div id="regime-field" style="margin-top:12px" ${c.regime?'':'hidden'}>${selectField('c-regime','Régimen pensionario',options(['Décimo transitorio','Cuenta individual','Por confirmar'],c.regime,partial?'Pendiente':'Selecciona'))}</div></div>
@@ -1343,7 +1571,8 @@ function editClient(id='',snapshot=null){
   }
   updateDuplicates();
 }
-function refreshClientDependency(reset=true){const dep=$('c-dep').value,partial=CG.importedClient(clientDraft);$('sector-wrap').hidden=dep!=='GOB MICH';$('regime-wrap').hidden=dep!=='SNTE 18';$('c-regime').required=dep==='SNTE 18'&&!partial;if(dep==='SNTE 18'&&!$('c-regime').value){$('regime-field').hidden=false;}let list=dep==='SNTE 18'?['Maestro SEP']:$('c-sector').value==='Magisterio'?['Magisterio']:$('c-sector').value?['Policía','Custodio','Burocracia']:['Policía','Custodio','Burocracia','Magisterio'];const old=$('c-profession').value,selected=list.includes(old)?old:partial?'':list[0];$('c-profession').innerHTML=options(list,selected,'Pendiente');if(!reset&&clientDraft.profession&&!list.includes(clientDraft.profession))$('c-profession').innerHTML+=`<option selected>${esc(clientDraft.profession)}</option>`;}
+function refreshClientDependency(reset=true){const dep=$('c-dep').value,partial=CG.importedClient(clientDraft);$('sector-wrap').hidden=dep!=='GOB MICH';$('regime-wrap').hidden=dep!=='SNTE 18';$('c-regime').required=dep==='SNTE 18'&&!partial;if(dep==='SNTE 18'&&!$('c-regime').value){$('regime-field').hidden=false;}let list=dep==='SNTE 18'?['Maestro SEP']:$('c-sector').value==='Magisterio'?['Magisterio']:$('c-sector').value?['Policía','Custodio','Burocracia']:['Policía','Custodio','Burocracia','Magisterio'];const old=$('c-profession').value,selected=list.includes(old)?old:partial?'':list[0];$('c-profession').innerHTML=options(list,selected,'Pendiente');if(!reset&&clientDraft.profession&&!list.includes(clientDraft.profession))$('c-profession').innerHTML+=`<option selected>${esc(clientDraft.profession)}</option>`;refreshPoliceStatus();}
+function refreshPoliceStatus(){const wrap=$('police-status-wrap'),input=$('c-police-status');if(!wrap||!input)return;const isPolice=$('c-dep').value==='GOB MICH'&&CG.norm($('c-profession').value)==='POLICIA',partial=CG.importedClient(clientDraft);wrap.hidden=!isPolice;input.required=isPolice&&!partial;if(isPolice&&!input.value){const detected=policeStatusValue({...clientDraft,profession:'Policía',notes:$('c-notes')?.value??clientDraft.notes});if(detected)input.value=detected;}}
 
 function clientBirthISO(){const raw=$('c-birth').value.trim(),value=raw.replaceAll('/','-');return /^[0-9]{4}\/[0-9]{2}\/[0-9]{2}$/.test(raw)&&CG.parseDate(value)&&value<=CG.dateStr()?value:'';}
 function syncClientBirthFromRFC(){const input=$('c-birth'),birth=CG.birthFromRFC($('c-rfc').value,$('c-curp').value);if(birth){input.value=birth.replaceAll('-','/');input.dataset.autoBirth=input.value;}else if(input.dataset.autoBirth===input.value){input.value='';delete input.dataset.autoBirth;}updateClientAges();}
@@ -1393,17 +1622,18 @@ function resumeClientDraft(){
   if(getClient(clientDraft?.id)&&!window.confirm('¿Volver a la captura anterior? Los cambios que no hayas guardado en este expediente se descartarán.'))return;
   duplicateDraft=null;editClient('',snapshot);
 }
-function collectLoanDraft(){for(const [i,l] of clientDraft.loans.entries()){if(!$(`l-${i}-lender`))continue;l.lender=$(`l-${i}-lender`).value;l.rate=+$(`l-${i}-rate`).value;l.ratePeriod='Quincenal';l.discount=+$(`l-${i}-discount`).value;l.amount=+$(`l-${i}-amount`).value;l.term=+$(`l-${i}-term`).value;l.date=$(`l-${i}-date`).value;}}
-function renderLoanRows(){if(!clientDraft)return;$('loan-rows').innerHTML=clientDraft.loans.map((l,i)=>`<div class="loan-box"><div class="row between"><h3 style="margin:0">Préstamo ${i+1}</h3>${button('remove-loan',icon('close'),`data-index="${i}" type="button" aria-label="Quitar préstamo ${i+1}"`,'danger slim')}</div><div class="loan-grid"><div class="lender-field">${selectField(`l-${i}-lender`,'Financiera',lenderOptions(l.lender)+`<option value="__other">＋ Otra financiera…</option>`,'data-loan-field="lender" data-index="'+i+'" aria-describedby="l-'+i+'-legal"')}<p class="lender-help" id="l-${i}-legal">${lenderHelpHTML(l.lender)}</p></div>${inputField(`l-${i}-rate`,'Tasa de interés quincenal (%)',l.rate,'number','min="0" step="0.0001" data-loan-field="rate"')}${inputField(`l-${i}-discount`,'Descuento quincenal ($)',l.discount,'number','min="0.01" step="0.01" data-loan-field="discount"')}${inputField(`l-${i}-amount`,'Monto otorgado ($)',l.amount,'number','min="0.01" step="0.01" data-loan-field="amount"')}${inputField(`l-${i}-term`,'Plazo (quincenas)',l.term||'','number','min="1" max="1000" step="1" data-loan-field="term"')}${inputField(`l-${i}-date`,'Fecha de dispersión',l.date,'date',`max="${CG.dateStr()}" data-loan-field="date"`)}</div><div id="loan-status-${i}" class="loan-status"></div></div>`).join('');refreshLoanRequired();updateDraftGroups();}
+function collectLoanDraft(){for(const [i,l] of clientDraft.loans.entries()){if(!$(`l-${i}-lender`))continue;l.lender=resolveLenderInput($(`l-${i}-lender`).value);l.rate=+$(`l-${i}-rate`).value;l.ratePeriod='Quincenal';l.discount=+$(`l-${i}-discount`).value;l.amount=+$(`l-${i}-amount`).value;l.term=+$(`l-${i}-term`).value;l.date=$(`l-${i}-date`).value;}}
+function loanHasData(l){return !!String(l?.lender||'').trim()||Number(l?.rate)>0||Number(l?.discount)>0||Number(l?.amount)>0||Number(l?.term)>0||!!String(l?.date||'').trim();}
+function renderLoanRows(){if(!clientDraft)return;$('loan-rows').innerHTML=clientDraft.loans.map((l,i)=>`<div class="loan-box"><div class="row between"><h3 style="margin:0">Préstamo ${i+1}</h3>${button('remove-loan',icon('close'),`data-index="${i}" type="button" aria-label="Quitar préstamo ${i+1}"`,'danger slim')}</div><div class="loan-grid"><div class="lender-field">${lenderInputField(i,l.lender)}<p class="lender-help" id="l-${i}-legal">${lenderHelpHTML(l.lender)}</p></div>${inputField(`l-${i}-rate`,'Tasa de interés quincenal (%)',l.rate,'number','min="0" step="0.0001" data-loan-field="rate"')}${inputField(`l-${i}-discount`,'Descuento quincenal ($)',l.discount,'number','min="0.01" step="0.01" data-loan-field="discount"')}${inputField(`l-${i}-amount`,'Monto otorgado ($)',l.amount,'number','min="0.01" step="0.01" data-loan-field="amount"')}${inputField(`l-${i}-term`,'Plazo (quincenas)',l.term||'','number','min="1" max="1000" step="1" data-loan-field="term"')}${inputField(`l-${i}-date`,'Fecha de dispersión',l.date,'date',`max="${CG.dateStr()}" data-loan-field="date"`)}</div><div id="loan-status-${i}" class="loan-status"></div></div>`).join('');refreshLoanRequired();updateDraftGroups();}
 function refreshLoanRequired(){const active=$('c-active').checked;document.querySelectorAll('#loan-rows input,#loan-rows select').forEach(el=>{el.required=active&&!(CG.importedClient(clientDraft)&&el.dataset.loanField==='date');el.disabled=!active;});}
 function updateDraftGroups(){collectLoanDraft();for(const [i,l]of clientDraft.loans.entries()){const p=CG.loanProgress(l);if($(`l-${i}-legal`))$(`l-${i}-legal`).innerHTML=lenderHelpHTML(l.lender);$(`loan-status-${i}`).innerHTML=badge(p.valid?p.label:'Pendiente',p.eligible?'green':'amber')+` <span class="muted">${p.valid?`Aportadas estimadas: ${p.paid} · Restantes: ${p.remaining} · Aportadas − 4: ${p.eligiblePaid}`:'Completa la fecha y el plazo.'}</span>`;}$('draft-groups').innerHTML=CG.groupLoans(clientDraft.loans.map(l=>({...l,active:true})),CG.dateStr(),state.lenders).filter(g=>g.lender&&g.lender!=='__other').map(g=>`<div class="loan-group">${lenderIdentityHTML(g.lender)}<span class="money">${fmt(g.discount)} por quincena</span></div>`).join('');}
 function addCustomLender(index){
   const previous=clientDraft?.loans[index]?.lender||'';collectLoanDraft();if(clientDraft?.loans[index])clientDraft.loans[index].lender=previous;openFinanceEditor('',`loan:${index}`);
 }
 function saveClient(event){
-  event.preventDefault();if(!getClient(clientDraft.id)&&redirectClientMatch())return;collectLoanDraft();updateClientAges();const form=$('client-form');if(!form.reportValidity())return;
+  event.preventDefault();if(!getClient(clientDraft.id)&&redirectClientMatch())return;collectLoanDraft();clientDraft.loans=clientDraft.loans.filter(loanHasData);if(!clientDraft.loans.length&&$('c-active').checked){$('c-active').checked=false;$('active-loans').hidden=true;}updateClientAges();const form=$('client-form');if(!form.reportValidity())return;
   const old=getClient(clientDraft.id),partial=CG.importedClient(old);
-  const c={...clientDraft,...candidateIdentity(),name:$('c-name').value.trim(),rfc:CG.norm($('c-rfc').value),curp:CG.norm($('c-curp').value),phone:CG.phone($('c-phone').value),dependency:$('c-dep').value,sector:$('c-dep').value==='GOB MICH'?$('c-sector').value:'',profession:$('c-profession').value,gender:$('c-gender').value,birth:clientBirthISO(),start:$('c-start').value,regime:$('c-dep').value==='SNTE 18'?$('c-regime').value:'',verified:$('c-verified').checked,capacity:Number($('c-capacity').value),employeeNumber:$('c-employee')?.value.trim()||'',contactBrand:$('c-contact-brand')?.value??clientDraft.contactBrand??'',notes:$('c-notes').value.trim(),loans:clientDraft.loans.map(l=>({...l,active:$('c-active').checked}))};
+  const c={...clientDraft,...candidateIdentity(),name:$('c-name').value.trim(),rfc:CG.norm($('c-rfc').value),curp:CG.norm($('c-curp').value),phone:CG.phone($('c-phone').value),dependency:$('c-dep').value,sector:$('c-dep').value==='GOB MICH'?$('c-sector').value:'',profession:$('c-profession').value,policeStatus:($('c-dep').value==='GOB MICH'&&CG.norm($('c-profession').value)==='POLICIA')?$('c-police-status').value:'',gender:$('c-gender').value,birth:clientBirthISO(),start:$('c-start').value,regime:$('c-dep').value==='SNTE 18'?$('c-regime').value:'',verified:$('c-verified').checked,capacity:Number($('c-capacity').value),employeeNumber:$('c-employee')?.value.trim()||'',contactBrand:$('c-contact-brand')?.value??clientDraft.contactBrand??'',notes:$('c-notes').value.trim(),loans:clientDraft.loans.map(l=>({...l,active:$('c-active').checked}))};
   const fail=m=>{$('client-error').textContent=m;$('client-error').scrollIntoView({block:'nearest'});};
   if((c.phone||!partial)&&c.phone.length!==10)return fail('El celular debe contener 10 dígitos; también se acepta el prefijo +52.');
   if((c.birth||!partial)&&!CG.parseDate(c.birth)||(c.start||!partial)&&!CG.parseDate(c.start)||(c.birth&&c.start&&c.birth>c.start))return fail('Verifica las fechas: la plaza no puede ser anterior al nacimiento.');
@@ -1420,9 +1650,10 @@ function saveClient(event){
       if(!CG.lenderCatalog(state.lenders).some(f=>f.id===CG.canonicalLender(l.lender,state.lenders))||(!CG.loanProgress(l).valid&&!(partial&&!l.date))||l.discount<=0||l.amount<=0||l.rate<0)return fail('Completa los datos de los préstamos activos. En expedientes importados puedes dejar la fecha de dispersión pendiente.');
     }
   }
-  if(!old){c.capacityUpdatedAt='';c.reviews={...c.reviews,capacity:{}};}
-  else if(old.capacity!==c.capacity){c.capacityUpdatedAt=new Date().toISOString();c.reviews={...c.reviews,capacity:{...c.reviews?.capacity,[CG.dateStr().slice(0,7)]:new Date().toISOString()}};}
-  if(commit(s=>{const i=s.clients.findIndex(x=>x.id===c.id);if(i<0)s.clients.unshift(c);else s.clients[i]=c;history(s,c.id,old?'Expediente actualizado':'Alta de cliente');},partial?'Avances guardados. Los datos faltantes siguen marcados como pendientes.':old?'Cliente guardado y carteras actualizadas.':'Cliente guardado y agregado a Actualizar capacidad.')){if(duplicateDraft?.targetId===c.id)duplicateDraft=null;closeDialog();if(old)render();else navigate('capacity');}
+  const capacityChanged=!old||old.capacity!==c.capacity;
+  if(capacityChanged){const reviewedAt=new Date().toISOString();c.capacityUpdatedAt=reviewedAt;c.reviews={...c.reviews,capacity:{...c.reviews?.capacity,[CG.dateStr().slice(0,7)]:reviewedAt}};}
+  const saveMessage=!old?'Cliente guardado. La capacidad quedó registrada y consultada este mes.':partial?(capacityChanged?'Avances guardados. La nueva capacidad quedó como consultada este mes; los demás datos faltantes siguen pendientes.':'Avances guardados. Los datos faltantes siguen marcados como pendientes.'):(capacityChanged?'Cliente guardado y carteras actualizadas. La nueva capacidad quedó como consultada este mes.':'Cliente guardado y carteras actualizadas.');
+  if(commit(s=>{const i=s.clients.findIndex(x=>x.id===c.id);if(i<0)s.clients.unshift(c);else s.clients[i]=c;history(s,c.id,old?'Expediente actualizado':'Alta de cliente');},saveMessage)){if(duplicateDraft?.targetId===c.id)duplicateDraft=null;closeDialog();if(old)render();else navigate('clients');}
 }
 
 function saveCapacity(id){const input=$(`cap-${id}`);if(!input.reportValidity()||input.value===''){toast('Captura una capacidad válida.',true);return;}const value=Number(input.value);if(!Number.isFinite(value))return;if(commit(s=>{const c=s.clients.find(c=>c.id===id);c.capacity=value;c.capacityUpdatedAt=new Date().toISOString();c.reviews={...c.reviews,capacity:{...c.reviews?.capacity,[CG.dateStr().slice(0,7)]:new Date().toISOString()}};history(s,id,'Capacidad actualizada a '+fmt(value));},'Capacidad guardada. La cartera se actualizó automáticamente.'))renderCapacity();}
@@ -1585,7 +1816,7 @@ function saleClientKeydown(event){
 function opportunitiesHTML(){
   const available=activeOpportunities(),ids=new Set(available.map(o=>o.id)),pending=available.filter(o=>!o.done).length;
   const items=(state.opportunities||[]).filter(o=>o.month===CG.dateStr().slice(0,7)&&getClient(o.clientId)).filter(o=>opportunityFilter==='all'||opportunityFilter==='done'&&o.done||opportunityFilter==='pending'&&ids.has(o.id)&&!o.done).sort((a,b)=>Number(a.done)-Number(b.done)||b.detectedAt.localeCompare(a.detectedAt));
-  return `<details class="panel opportunities-panel" open><summary class="opportunities-heading">Oportunidades automáticas <span class="pill wine">${pending} por revisar</span></summary><div class="panel-body"><p class="small muted">Crédito nuevo: capacidad registrada desde $140. Compra de cartera: capacidad entre −$800 y menos de $140, con un préstamo que cumpla aportadas menos 4 ≥ 24. Confirma capacidad, saldos y requisitos antes de ofrecerlo; son posibilidades, no créditos aprobados.</p><p class="small muted">Se revisan de nuevo cada mes. Una venta registrada en el mes evita otro aviso por la misma operación.</p>${tabs([['pending','Por revisar'],['done','Atendidas'],['all','Todas']],opportunityFilter,'opportunity-filter')}<div class="opportunities-list">${items.length?items.map(o=>{const c=getClient(o.clientId),active=ids.has(o.id);return `<article class="opportunity-item"><div><h3>${esc(c.name)}</h3><div class="row">${badge(o.type==='new'?'Posible crédito nuevo':'Posible compra de cartera',o.type==='new'?'green':'wine')}${badge(c.dependency)}${badge(!active?'Ya no aplica':o.done?'Atendida':'Por revisar',o.done?'green':'amber')}</div><p class="small muted">Capacidad registrada: <b class="money">${fmt(c.capacity)}</b> · Detectada: ${displayDate(o.detectedAt)}${CG.reviewed(c,'capacity')?'':' · Capacidad por consultar este mes'}</p>${o.type==='debt'?`<p class="small muted">${o.loanIds.length} préstamo(s) con antigüedad para compra · ${o.lenderIds.map(id=>esc(lenderName(id))).join(' · ')}</p>`:''}</div><div class="actions">${button('client-detail','Ver cliente',`data-id="${esc(c.id)}"`,'slim')}${active&&!o.done?(o.type==='debt'?button('nav','Consultar compatibilidad','data-id="deals"','slim'):button('quote-client','Cotizar',`data-id="${esc(c.id)}"`,'slim')):''}${active?button('opportunity-done',o.done?'Volver a revisar':'Marcar atendida',`data-id="${esc(o.id)}" aria-pressed="${o.done}"`,'slim '+(o.done?'soft':'primary')):''}</div></article>`;}).join(''):'<p class="muted" style="margin:18px 0 0">No hay oportunidades en esta vista.</p>'}</div></div></details>`;
+  return `<details class="panel opportunities-panel" open><summary class="opportunities-heading">Oportunidades automáticas <span class="pill wine">${pending} por revisar</span></summary><div class="panel-body"><p class="small muted">Crédito nuevo: capacidad registrada desde $140. Compra de cartera: capacidad entre −$800 y menos de $140, con un préstamo que cumpla aportadas menos 4 ≥ 24. Confirma capacidad, saldos y requisitos antes de ofrecerlo; son posibilidades, no créditos aprobados.</p><p class="small muted">Se revisan de nuevo cada mes. Una venta registrada en el mes evita otro aviso por la misma operación.</p>${tabs([['pending','Por revisar'],['done','Atendidas'],['all','Todas']],opportunityFilter,'opportunity-filter')}<div class="opportunities-list">${items.length?items.map(o=>{const c=getClient(o.clientId),active=ids.has(o.id);return `<article class="opportunity-item"><div><h3>${esc(c.name)}</h3><div class="row">${badge(o.type==='new'?'Posible crédito nuevo':'Posible compra de cartera',o.type==='new'?'green':'wine')}${badge(c.dependency)}${c.profession?badge(c.profession):''}${CG.norm(c.profession)==='POLICIA'?policeStatusBadge(c):''}${badge(!active?'Ya no aplica':o.done?'Atendida':'Por revisar',o.done?'green':'amber')}</div><p class="small muted">Capacidad registrada: <b class="money">${fmt(c.capacity)}</b> · Detectada: ${displayDate(o.detectedAt)}${CG.reviewed(c,'capacity')?'':' · Capacidad por consultar este mes'}</p>${o.type==='debt'?`<p class="small muted">${o.loanIds.length} préstamo(s) con antigüedad para compra · ${o.lenderIds.map(id=>esc(lenderName(id))).join(' · ')}</p>`:''}</div><div class="actions">${button('client-detail','Ver cliente',`data-id="${esc(c.id)}"`,'slim')}${active&&!o.done?(o.type==='debt'?button('nav','Consultar compatibilidad','data-id="deals"','slim'):button('quote-client','Cotizar',`data-id="${esc(c.id)}"`,'slim')):''}${active?button('opportunity-done',o.done?'Volver a revisar':'Marcar atendida',`data-id="${esc(o.id)}" aria-pressed="${o.done}"`,'slim '+(o.done?'soft':'primary')):''}</div></article>`;}).join(''):'<p class="muted" style="margin:18px 0 0">No hay oportunidades en esta vista.</p>'}</div></div></details>`;
 }
 function toggleOpportunityDone(id){const o=activeOpportunities().find(o=>o.id===id);if(!o)return;const done=!o.done;if(commit(s=>CG.setOpportunityDone(s,id,done,CG.dateStr()),done?'Oportunidad marcada como atendida.':'Oportunidad pendiente de revisar.'))renderTasks();}
 function renderTasks(){const pending=activeTasks().filter(t=>!t.done),overdue=pending.filter(t=>new Date(t.due)<new Date());const tasks=activeTasks().filter(t=>taskFilter==='all'||taskFilter==='done'?taskFilter==='all'||t.done:!t.done).filter(t=>taskFilter!=='overdue'||new Date(t.due)<new Date()).sort((a,b)=>Number(a.done)-Number(b.done)||a.due.localeCompare(b.due));const unreviewed=activeClients().filter(c=>!CG.reviewed(c,'capacity')).length,possibleDebt=activeOpportunities().filter(o=>o.type==='debt'&&!o.done).length;
@@ -1638,7 +1869,7 @@ function clientImportRow(raw,index,batchId){
   const dependency=clientImportDependency(get('Dependencia'));
   let loans=[];const loanRaw=get('Prestamos JSON','Préstamos JSON','Loans JSON');if(loanRaw){try{const parsed=JSON.parse(loanRaw);if(Array.isArray(parsed))loans=parsed.map(clientImportLoan).filter(Boolean);}catch(_){}}
   const employeeNumber=String(get('Numero de empleado','Número de empleado','Num empleado')).trim(),recordId=rfc||curp||`fila-${index+2}`;
-  return {id:`import-${uid()}`,name,rfc,curp,phone,dependency,sector:String(get('Area','Área','Sector')).trim(),profession:String(get('Profesion','Profesión')).trim(),gender:String(get('Genero','Género')).trim(),birth:clientImportDate(get('Nacimiento','Fecha de nacimiento')),start:clientImportDate(get('Fecha de plaza','Ingreso','Fecha de ingreso')),regime:String(get('Regimen pensionario','Régimen pensionario','Regimen','Régimen')).trim(),verified:clientImportBoolean(get('Verificado','Verificacion','Verificación')),capacity:clientImportNumber(get('Capacidad','Capacidad quincenal')),capacityUpdatedAt:clientImportDate(get('Ultima actualizacion','Última actualización','Fecha de actualización de capacidad')),createdAt:new Date().toISOString(),reviews:{},notes:String(get('Notas')).trim(),employeeNumber,contactBrand:clientImportBrand(get('Marca del contacto')),loans,origin:clientImportOrigin(null,batchId,recordId,{nombre:name,rfc,curp,telefono:phone,numEmpleado:employeeNumber})};
+  return {id:`import-${uid()}`,name,rfc,curp,phone,dependency,sector:String(get('Area','Área','Sector')).trim(),profession:String(get('Profesion','Profesión')).trim(),policeStatus:String(get('Tipo de plaza','Tipo plaza','Plaza')).trim(),gender:String(get('Genero','Género')).trim(),birth:clientImportDate(get('Nacimiento','Fecha de nacimiento')),start:clientImportDate(get('Fecha de plaza','Ingreso','Fecha de ingreso')),regime:String(get('Regimen pensionario','Régimen pensionario','Regimen','Régimen')).trim(),verified:clientImportBoolean(get('Verificado','Verificacion','Verificación')),capacity:clientImportNumber(get('Capacidad','Capacidad quincenal')),capacityUpdatedAt:clientImportDate(get('Ultima actualizacion','Última actualización','Fecha de actualización de capacidad')),createdAt:new Date().toISOString(),reviews:{},notes:String(get('Notas')).trim(),employeeNumber,contactBrand:clientImportBrand(get('Marca del contacto')),loans,origin:clientImportOrigin(null,batchId,recordId,{nombre:name,rfc,curp,telefono:phone,numEmpleado:employeeNumber})};
 }
 function clientImportJSONRow(raw,index,batchId){
   const data=raw?.datos&&typeof raw.datos==='object'?raw.datos:raw,loanSource=Array.isArray(data?.loans)?data.loans:Array.isArray(data?.descuentos)?data.descuentos:[],dependency=clientImportDependency(data?.dependency??data?.dependencia),loans=loanSource.map(clientImportLoan).filter(Boolean);
@@ -1677,7 +1908,7 @@ function importClientsFile(file){
     if(commit(s=>{for(const c of newClients)s.clients.unshift(c);for(const c of newClients)history(s,c.id,'Cliente importado');},`${newClients.length} cliente(s) importado(s). ${duplicates} duplicado(s) omitido(s)${invalid?` · ${invalid} inválido(s)`:''}.`))render();
   }catch(e){toast('No se pudieron importar los clientes: '+e.message,true);}finally{if(input)input.value='';}};reader.onerror=()=>{if(input)input.value='';toast('No se pudo leer el archivo.',true);};reader.readAsText(file);
 }
-function exportClients(singleId=''){let clients=singleId?[getClient(singleId)].filter(Boolean):current==='clients'?activeClients():current==='green'||current==='debt'?visiblePortfolioClients():current==='capacity'?filteredClients({dependency:currentDep}):filteredClients({dependency:currentDep==='all'?'':currentDep});const headers=['RFC','Nombre','CURP','Celular','Marca del contacto','Verificado','Dependencia','Área','Profesión','Género','Nacimiento','Edad','Fecha de plaza','Antigüedad meses','Régimen pensionario','Capacidad','Cartera','Última actualización','Consultado este mes','Revisado Cartera Verde','Revisado Compra de Deuda','Préstamos y grupos por financiera','Préstamos JSON','Notas','Número de empleado','Datos pendientes'];csv(`credigob_${singleId?'expediente':current}_${CG.dateStr()}.csv`,[headers,...clients.map(c=>[c.rfc,c.name,c.curp,c.phone,c.contactBrand||'Pendiente',c.verified?'Sí':'No',c.dependency,c.sector,c.profession,c.gender,c.birth,CG.years(c.birth),c.start,CG.months(c.start),c.regime,c.capacity,CG.route(c.capacity)==='green'?'Cartera Verde':CG.route(c.capacity)==='debt'?'Compra de Deuda':CG.route(c.capacity)==='unknown'?'Capacidad pendiente':'Fuera de rango',c.capacityUpdatedAt,CG.reviewed(c,'capacity')?'Sí':'No',CG.reviewed(c,'green')?'Sí':'No',CG.reviewed(c,'debt')?'Sí':'No',JSON.stringify(CG.groupLoans(c.loans,CG.dateStr(),state.lenders)),JSON.stringify(c.loans||[]),c.notes,c.employeeNumber||'',CG.clientPending(c,activeClients()).join('; ')])]);}
+function exportClients(singleId=''){let clients=singleId?[getClient(singleId)].filter(Boolean):current==='clients'?activeClients():current==='green'||current==='debt'?visiblePortfolioClients():current==='capacity'?filteredClients({dependency:currentDep}):filteredClients({dependency:currentDep==='all'?'':currentDep});const headers=['RFC','Nombre','CURP','Celular','Marca del contacto','Verificado','Dependencia','Área','Profesión','Tipo de plaza','Género','Nacimiento','Edad','Fecha de plaza','Antigüedad meses','Régimen pensionario','Capacidad','Cartera','Última actualización','Consultado este mes','Revisado Cartera Verde','Revisado Compra de Deuda','Préstamos y grupos por financiera','Préstamos JSON','Notas','Número de empleado','Datos pendientes'];csv(`credigob_${singleId?'expediente':current}_${CG.dateStr()}.csv`,[headers,...clients.map(c=>[c.rfc,c.name,c.curp,c.phone,c.contactBrand||'Pendiente',c.verified?'Sí':'No',c.dependency,c.sector,c.profession,policeStatusValue(c),c.gender,c.birth,CG.years(c.birth),c.start,CG.months(c.start),c.regime,c.capacity,CG.route(c.capacity)==='green'?'Cartera Verde':CG.route(c.capacity)==='debt'?'Compra de Deuda':CG.route(c.capacity)==='unknown'?'Capacidad pendiente':'Fuera de rango',c.capacityUpdatedAt,CG.reviewed(c,'capacity')?'Sí':'No',CG.reviewed(c,'green')?'Sí':'No',CG.reviewed(c,'debt')?'Sí':'No',JSON.stringify(CG.groupLoans(c.loans,CG.dateStr(),state.lenders)),JSON.stringify(c.loans||[]),c.notes,c.employeeNumber||'',CG.clientPending(c,activeClients()).join('; ')])]);}
 let quoteExporting=false,quoteExportDraft=null;
 function quoteExportSnapshot(){
   const now=new Date();
@@ -1699,7 +1930,7 @@ function openQuoteExport(){
   if(!snapshot.products.length){toast('Calcula una cotización antes de exportarla.',true);return;}
   const groups=quoteExportGroups(snapshot.products);
   quoteExportDraft={snapshot,groups,selected:new Set(groups.map((_,index)=>index)),error:''};
-  openDialog('Seleccionar financieras',`<div class="quote-export-intro"><p>Elige una, varias o todas para incluirlas en una sola imagen JPG.</p><span class="pill wine">${esc(snapshot.dependency)} · ${snapshot.operation==='cc'?'Compra de cartera (CC)':'Crédito nuevo'}</span></div><div class="row between quote-export-toolbar"><div class="actions">${button('quote-export-all','Seleccionar todas','data-quote-export-control','slim')}${button('quote-export-none','Ninguna','data-quote-export-control','slim')}</div><span id="quote-export-count" class="muted" role="status" aria-live="polite"></span></div><fieldset id="quote-export-options" class="quote-export-options"><legend>Financieras con cotizaciones disponibles</legend>${groups.map((group,index)=>`<label class="quote-export-option"><input type="checkbox" data-quote-export-index="${index}" checked><span class="quote-export-identity"><strong>${esc(group.brand.name)}</strong>${group.brand.legal.length?`<small>${esc(QuoteJPG.legalText(group.brand))}</small>`:''}<span class="quote-export-products">${group.indices.map(i=>esc(quoteProductLabel(snapshot.products[i]))).join(' · ')}</span></span>${group.brand.logo?`<img src="${group.brand.logo}" alt="" class="quote-export-logo">`:''}</label>`).join('')}</fieldset><p id="quote-export-error" class="negative small" role="alert"></p>`,button('close','Cancelar','data-quote-export-control')+button('confirm-export-quotes',`${icon('download')} Descargar JPG`,'id="quote-export-confirm"','primary'));
+  openDialog('Seleccionar financieras',`<div class="quote-export-intro"><p>Elige una, varias o todas para incluirlas en una sola imagen JPG.</p><p class="small muted">Si seleccionas todas, el sistema resaltará automáticamente la mejor opción estimada en verde.</p><span class="pill wine">${esc(snapshot.dependency)} · ${snapshot.operation==='cc'?'Compra de cartera (CC)':'Crédito nuevo'}</span></div><div class="row between quote-export-toolbar"><div class="actions">${button('quote-export-all','Seleccionar todas','data-quote-export-control','slim')}${button('quote-export-none','Ninguna','data-quote-export-control','slim')}</div><span id="quote-export-count" class="muted" role="status" aria-live="polite"></span></div><fieldset id="quote-export-options" class="quote-export-options"><legend>Financieras con cotizaciones disponibles</legend>${groups.map((group,index)=>`<label class="quote-export-option"><input type="checkbox" data-quote-export-index="${index}" checked><span class="quote-export-identity"><strong>${esc(group.brand.name)}</strong>${group.brand.legal.length?`<small>${esc(QuoteJPG.legalText(group.brand))}</small>`:''}<span class="quote-export-products">${group.indices.map(i=>esc(quoteProductLabel(snapshot.products[i]))).join(' · ')}</span></span>${group.brand.logo?`<img src="${group.brand.logo}" alt="" class="quote-export-logo">`:''}</label>`).join('')}</fieldset><p id="quote-export-error" class="negative small" role="alert"></p>`,button('close','Cancelar','data-quote-export-control')+button('confirm-export-quotes',`${icon('download')} Descargar JPG`,'id="quote-export-confirm"','primary'));
   $('dialog').oncancel=event=>{if(quoteExporting)event.preventDefault();else quoteExportDraft=null;};
   syncQuoteExportSelection();
 }
@@ -1730,7 +1961,7 @@ async function confirmQuoteExport(){
   const draft=quoteExportDraft,products=selectedQuoteExportProducts(draft);
   if(!products.length){syncQuoteExportSelection();return;}
   draft.error='';
-  const success=await exportQuotes({...draft.snapshot,products});
+  const success=await exportQuotes({...draft.snapshot,products,highlightBest:draft.selected.size===draft.groups.length&&draft.groups.length>1});
   if(success&&quoteExportDraft===draft)closeDialog();
 }
 async function exportQuotes(selectedSnapshot=null){
@@ -1798,7 +2029,8 @@ document.addEventListener('click',event=>{const target=event.target.closest('[da
   case 'quote-client':quoteClient(id);break;
   case 'toggle-regime':$('regime-field').hidden=!$('regime-field').hidden;target.setAttribute('aria-expanded',String(!$('regime-field').hidden));break;
   case 'add-loan':addLoan();break;
-  case 'remove-loan':collectLoanDraft();clientDraft.loans.splice(+target.dataset.index,1);renderLoanRows();break;
+  case 'remove-loan':collectLoanDraft();clientDraft.loans.splice(+target.dataset.index,1);if(!clientDraft.loans.length){$('c-active').checked=false;$('active-loans').hidden=true;}renderLoanRows();break;
+  case 'new-loan-finance':addCustomLender(+target.dataset.index);break;
   case 'deal-view':switchDealView(id);break;
   case 'purchase-dep':switchPurchaseDep(id);break;
   case 'matrix-target-select':selectPurchaseTarget(id);break;
@@ -1845,6 +2077,7 @@ document.addEventListener('input',event=>{const el=event.target,id=el.id;
   if(id==='q-birth'||id==='q-start'){quote[id==='q-birth'?'birth':'start']=el.value;if(id==='q-birth')quote.ageMode='birth';syncQuoteDateFields();updateQuoteResults();return;}
   if(['c-name','c-rfc','c-curp','c-phone'].includes(id)){if(id==='c-rfc'||id==='c-curp'){el.value=el.value.toUpperCase();syncClientBirthFromRFC();}updateDuplicates();if(id==='c-rfc'||id==='c-phone')scheduleClientMatch(id);}
   if(['c-birth','c-start'].includes(id)){if(id==='c-birth')delete el.dataset.autoBirth;updateClientAges();}
+  if(id==='c-notes'&&$('c-police-status')&&!$('c-police-status').value&&CG.norm($('c-profession')?.value)==='POLICIA'){const detected=policeStatusFromNotes({dependency:$('c-dep').value,profession:$('c-profession').value,notes:el.value});if(detected)$('c-police-status').value=detected;}
   if(el.dataset.loanField&&el.tagName!=='SELECT')updateDraftGroups();
 });
 document.addEventListener('keydown',event=>{if(event.target.id==='sale-client-search')saleClientKeydown(event);});
@@ -1854,7 +2087,11 @@ document.addEventListener('focusin',event=>{
   if(event.target.id==='matrix-target-search'){const box=$('matrix-target-suggestions');if(box)box.hidden=false;renderPurchaseSuggestions('target');}
   if(event.target.id==='matrix-buyer-search'){const box=$('matrix-buyer-suggestions');if(box)box.hidden=false;renderPurchaseSuggestions('buyer');}
 });
-document.addEventListener('focusout',event=>{if(event.target.id==='sale-client-search'&&!event.relatedTarget?.closest('#sale-client-picker'))closeSaleClientResults();});
+document.addEventListener('focusout',event=>{
+  const el=event.target;
+  if(el.id==='sale-client-search'&&!event.relatedTarget?.closest('#sale-client-picker'))closeSaleClientResults();
+  if(el.dataset?.loanField==='lender'){normalizeLenderInputElement(el);updateDraftGroups();}
+});
 document.addEventListener('change',event=>{const el=event.target,id=el.id;
   if(id==='setting-dark'){applyTheme(el.checked?'dark':'light');return;}
   if(el.hasAttribute?.('data-matrix-rule')){updatePurchaseRuleControl(el);return;}
@@ -1868,9 +2105,9 @@ document.addEventListener('change',event=>{const el=event.target,id=el.id;
   if(id==='q-mode'){quote.mode=el.value;quote.value='';renderQuotes();}
   if(id==='q-age-mode'&&['manual','birth'].includes(el.value)){if(el.value==='manual'){quote.age=CG.quoteProfile(quote).age??'';quote.birth='';}quote.ageMode=el.value;renderQuotes();}
   for(const [field,key]of [['q-gender','gender'],['q-profession','profession'],['q-regime','regime']])if(id===field){quote[key]=el.value;updateQuoteResults();}
-  if(id==='c-dep'||id==='c-sector')refreshClientDependency();
+  if(id==='c-dep'||id==='c-sector')refreshClientDependency();if(id==='c-profession')refreshPoliceStatus();
   if(id==='c-active'){$('active-loans').hidden=!el.checked;if(el.checked&&!clientDraft.loans.length)addLoan();refreshLoanRequired();}
-  if(el.dataset.loanField){if(el.dataset.loanField==='lender'&&el.value==='__other')addCustomLender(+el.dataset.index);else updateDraftGroups();}
+  if(el.dataset.loanField){if(el.dataset.loanField==='lender')normalizeLenderInputElement(el);updateDraftGroups();}
   if(id==='client-pending-only'){clientPendingOnly=el.checked;renderDirectoryRows();}
   if(id==='debt-status-filter'){debtFilter=el.value;renderPortfolioRows();}
   if(id==='show-reviewed'){showReviewed=el.checked;if(current==='capacity')renderCapacityRows();else renderPortfolioRows();}
@@ -1884,18 +2121,52 @@ if(typeof window!=='undefined')window.addEventListener('beforeunload',event=>{if
 $('login-form').onsubmit=e=>{
   e.preventDefault();
   const email=$('login-user').value.trim(),pass=$('login-pass').value;
-  $('login-error').textContent='';
-  const submitBtn=$('login-form').querySelector('button[type=submit]');
+  const errorBox=$('login-error'),submitBtn=$('login-form').querySelector('button[type=submit]');
+  errorBox.textContent='';
+  if(location.protocol==='file:'){
+    errorBox.textContent='Este archivo se abrió directamente desde el teléfono. Para iniciar sesión abre la versión publicada en GitHub Pages (dirección https://...), no el archivo de Descargas.';
+    return;
+  }
+  if(!fbAuth){
+    errorBox.textContent='No se pudo cargar Firebase en este dispositivo. '+(firebaseInitError||'Comprueba Internet y recarga la página.');
+    return;
+  }
   submitBtn.disabled=true;
-  fbAuth.signInWithEmailAndPassword(email,pass).then(()=>{submitBtn.disabled=false;}).catch(err=>{
-    submitBtn.disabled=false;
-    const messages={'auth/invalid-email':'Correo con formato inválido.','auth/user-not-found':'Ese correo no tiene una cuenta en el portal.','auth/wrong-password':'Contraseña incorrecta.','auth/invalid-credential':'Correo o contraseña incorrectos.','auth/too-many-requests':'Demasiados intentos. Espera un momento e inténtalo de nuevo.'};
-    $('login-error').textContent=messages[err.code]||('No se pudo iniciar sesión: '+err.message);
-  });
+  const originalHTML=submitBtn.innerHTML;
+  submitBtn.textContent='Iniciando sesión…';
+  let finished=false;
+  const loginTimer=setTimeout(()=>{
+    if(finished)return;
+    submitBtn.disabled=false;submitBtn.innerHTML=originalHTML;
+    errorBox.textContent='La conexión está tardando demasiado. Verifica Internet, cierra esta pestaña y vuelve a abrir la dirección de GitHub Pages.';
+  },15000);
+  Promise.resolve(authPersistenceReady)
+    .then(()=>fbAuth.signInWithEmailAndPassword(email,pass))
+    .then(()=>{finished=true;clearTimeout(loginTimer);submitBtn.disabled=false;submitBtn.innerHTML=originalHTML;})
+    .catch(err=>{
+      finished=true;clearTimeout(loginTimer);submitBtn.disabled=false;submitBtn.innerHTML=originalHTML;
+      const messages={
+        'auth/invalid-email':'Correo con formato inválido.',
+        'auth/user-not-found':'Ese correo no tiene una cuenta en el portal.',
+        'auth/wrong-password':'Contraseña incorrecta.',
+        'auth/invalid-credential':'Correo o contraseña incorrectos.',
+        'auth/too-many-requests':'Demasiados intentos. Inténtalo de nuevo más tarde.',
+        'auth/network-request-failed':'No se pudo comunicar con Firebase. Revisa la conexión a Internet del teléfono.',
+        'auth/unauthorized-domain':'Este origen no está autorizado para iniciar sesión. Abre el portal desde su dirección de GitHub Pages.',
+        'auth/operation-not-supported-in-this-environment':'Este navegador/WebView no permite el inicio de sesión. Abre el enlace en Chrome o Safari.'
+      };
+      errorBox.textContent=messages[err&&err.code]||('No se pudo iniciar sesión: '+((err&&err.message)||'error desconocido'));
+    });
 };
-fbAuth.onAuthStateChanged(user=>{
-  if(user&&$('app-view').hidden&&!demoMode)login(false);
-});
+if(fbAuth){
+  fbAuth.onAuthStateChanged(user=>{
+    if(user&&$('app-view').hidden&&!demoMode)login(false);
+  },err=>{if($('login-error'))$('login-error').textContent='No se pudo recuperar la sesión: '+(err.message||err);});
+}else if($('login-error')){
+  $('login-error').textContent=location.protocol==='file:'
+    ?'Abre este portal desde su dirección https:// de GitHub Pages para poder iniciar sesión.'
+    :'No se pudo inicializar Firebase. '+(firebaseInitError||'Comprueba Internet y recarga la página.');
+}
 $('rule-editor-dialog').addEventListener('cancel',event=>{event.preventDefault();closeRuleEditor();});
 document.querySelectorAll('[data-logo]').forEach(el=>el.src=BRAND_LOGO);
 $('today-label').textContent=new Date().toLocaleDateString('es-MX',{day:'numeric',month:'long',year:'numeric'});
